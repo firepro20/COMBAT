@@ -1,6 +1,6 @@
 #Auto-Generated Configuration
 #
-#12/20/2001 16:30:38
+#3/4/2018 20:23:39
 #
 #
 GROUP Options
@@ -16,11 +16,11 @@ GROUP Options
 	Lives 3
 	Health 3
 	ExtraLife 10000
-	PlayerName Player
+	PlayerName firepro20
 	TankName Axiomatic
 	NetUpdateFrequency 50
-	VideoWidth 800
-	VideoHeight 600
+	VideoWidth 1920
+	VideoHeight 1080
 	VideoDepth 32
 	WindowedMode False
 	Skybox FANCY
