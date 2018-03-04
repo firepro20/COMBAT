@@ -1,0 +1,26 @@
+GROUP Interface
+	ELEMENT		ShadedBackground
+	Type		Box
+	Flags		IFACE_BLEND_ALPHA,IFACE_DRAWBORDER,IFACE_FILL
+	Color		0xBB444444
+	BorderColor	0x00FFFFFF
+	GROUP Children
+		ELEMENT		ConsoleText
+		Type		Text
+		Flags		IFACE_BLEND_NORMAL
+		MaxLength	4096
+		Color		0x00FFFFFF
+		XPosition	5
+		YPosition	4
+		Font		Console
+		GROUP Children
+			ELEMENT		Cursor
+			Type		Box
+			Flags		IFACE_BLEND_NORMAL,IFACE_FILL
+			Color		0x00FFFFFF
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+GROUP END

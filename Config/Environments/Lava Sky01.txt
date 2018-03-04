@@ -1,0 +1,30 @@
+# LavaSky.
+
+LightAngle		210
+LightElevation	60
+LightColor		0x000000
+LightAmbient	0xC93535
+
+UseFog			True
+FogStart		10
+FogEnd			650
+FogColor		0xC93535
+
+NoSkyColor			0x00FF6200
+SimpleSkyZenithColorTop		0x00FFC400
+SimpleSkyHorizonColorTop	0x00FF6200
+SimpleSkyHorizonColorBot	0x00FF6200
+SImpleSkyZenithColorBot		0x00FF2100
+
+GROUP SkyLevels
+ELEMENT Lavatop
+	SkyMoveFraction		.0012
+	SkyTextureBot		lavatop02.bmp
+	SkyHeightBot		5.0
+	SkyRotateSpeed		.00004
+ELEMENT END
+ELEMENT Backgroundtop
+	SkyTextureTop		lavarock02.bmp
+	SkyTextureBot		lavarock02.bmp
+ELEMENT END
+GROUP END

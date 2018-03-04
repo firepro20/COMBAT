@@ -1,0 +1,34 @@
+# More cool clouds by Tony Gaddis.
+# Dusky type sky
+
+LightAngle		45
+LightElevation	60
+LightColor		0x685CA6
+LightAmbient	0x6464A0
+UseFog			True
+FogStart		350
+FogEnd			650
+FogColor		0x66527E
+
+NoSkyColor			169,111,126
+SimpleSkyZenithColorTop		251,244,177
+SimpleSkyHorizonColorTop	245,161,101
+SimpleSkyHorizonColorBot	245,161,101
+SImpleSkyZenithColorBot		64,63,108
+
+GROUP SkyLevels
+ELEMENT Grid
+	SkyTextureTop		storm02.bmp
+	SkyTextureBot		storm02.bmp
+	SkyHeightTop		55
+	SkyHeightBot		30
+	SkyMoveFraction		.03
+	SkyRotateSpeed		.000022
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00111144
+	SkyZenithColorTop	0x002222FF
+	SkyHorizonColorBot	0x00111144
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

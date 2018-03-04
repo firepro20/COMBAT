@@ -1,0 +1,48 @@
+# A teeny sky.
+
+LightAngle		122
+LightElevation	45
+LightColor		0x00EEFFCC
+LightAmbient	0x00000000
+
+UseFog			True
+FogStart		100
+FogEnd			450
+FogColor		0x00000000
+
+NoSkyColor			0x00000000
+SimpleSkyZenithColorTop		0x00000000
+SimpleSkyHorizonColorTop	0x00151223
+SimpleSkyHorizonColorBot	0x00151223
+SImpleSkyZenithColorBot		0x00000000
+
+GROUP SkyLevels
+ELEMENT MoonDetail
+	SkyTextureBot		moondetail.tga
+	SkyHeightBot		-12.5
+	SkyMoveFraction		.25
+	TextureZoomBot		32
+	SkyHeightAdjust 	-15.5
+ELEMENT END
+ELEMENT MoonSurface
+	SkyTextureBot		moontile.bmp
+	SkyHeightBot		-12.5
+	SkyMoveFraction		1.0
+	TextureZoomBot		4
+	SkyHeightAdjust 	-15.5
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00000000
+	SkyZenithColorTop	0x00000000
+	SkyHorizonColorBot	0x00000000
+	SkyZenithColorBot	0x00000000
+	GROUP Bitmaps
+	ELEMENT Earth
+ 		BitmapFile		earth.tga
+ 		BitmapAngle		12
+ 		BitmapElev		-6
+ 		BitmapSize		2.0f
+ 	ELEMENT END
+	GROUP END
+ELEMENT END
+GROUP END

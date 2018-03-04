@@ -1,0 +1,18 @@
+# This displays a player's name above their tank in multiplayer.
+GROUP Interface
+	ELEMENT 	PlayerNameParent
+	Type		Dummy
+	Flags		IFACE_POS_3DANCHOR
+
+   	GROUP Children
+	ELEMENT 	PlayerName
+	Type 		Text
+	MaxLength	32
+	Font		Interface
+   	XPosition	-16
+   	YPosition	-32
+	ELEMENT END
+	GROUP END
+	
+	ELEMENT END
+GROUP END

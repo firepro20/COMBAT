@@ -1,0 +1,117 @@
+#
+# Tank basic description
+#
+
+TankName	Axiomatic
+LongName	Axiomatic
+#Model		player01_test.AMO
+Model		p_01.AMO
+# 2 is red, 3 and 4 are yellow
+
+#
+# Vehicle dimensions
+#
+
+# Crosswise "radius" of vehicle (m)
+Width				2.8
+#Width				2.1
+# Lengthwise "radius" of vehicle (m)
+Length				5.5
+#Length				5.0
+# Height of vehicle's center (m)
+VCenter				1.5
+
+#
+# Movement characteristics
+#
+
+# Tank's maximum speed (m/s)
+MaximumSpeed		100.0
+# How quickly your speed goes down if it somehow exceeds the max (m/s/s)
+MaxSpeedReduce		250.0
+
+# Preferred hovering altitude (m)
+HoverAltitude		1.5
+# How rapidly your speed increases when you hold down the gas (m/s/s)
+Acceleration		92.0
+# How rapidly your speed goes backwards when you use reverse thrust (m/s/s)
+RevAcceleration		70.0
+# How rapidly you accelerate when "strafing" left to right (m/s/s)
+StrafeAcceleration	92.0
+# How quickly your vehicle is stopped when you slam on the emergency brake (m/s/s)
+EmergencyBrake		170.0
+# How quickly your turning speed goes up (r/s/s)
+TurningAccel		16.0
+# The maximum speed your vehicle can turn (r/s)
+MaxTurnSpeed		3.5
+# As you're flying along you will slowly coast to a stop at this rate (m/s/s)
+MotionInertia		40.0
+# Mass of tank (in kg, presumably, but the important thing is how it compares
+# to other masses of objects for elastic collisions).
+Mass			20000.0
+# How big is the radius for the sphere of collision (in meters)
+CollisionSphereRad	5.0
+# Your rotating stops at this rate when you let up on the button (r/s/s)
+RotationalInertia	9.0
+# Energy remaining after collision, aka "Coefficient of Restitution" (pct)
+CollisionEnergy		.85
+# Preferred hover altitude (m)
+HoverAltitude		3.0
+# Force of gravity on this vehicle (m/s/s)
+GravityEffect 		.98
+
+# NEW movement characteristics
+# Maximum steepness of a ramp you can drive on (r)
+MaxRampAngle		.50
+# How fast you tilt when going up and down ramps and over tiny gaps (r/s)
+RampTiltRate		2.0
+# How fast the speed of tipping over goes up when falling off an edge (r/s/s)
+FallingTiltAccel	4.5
+# Factor that propels you away from a wall when you tip over it
+TipMoveFactor		100
+# Maximum amount you tip over when falling off an edge (r)
+MaxFallingTilt		.45
+# How quickly you recover from that when you've gone over the edge (r/s)
+FallingTiltRecover	4.5
+# How fast bullets move
+ShotSpeed		250
+
+#
+# Movement effect characteristics
+#
+
+# The vehicle's banking factor, based on to your speed and how hard it's turning
+TiltAroundCornersFactor		0.002
+
+# How swiftly you tilt forwards/backwards as you accelerate (r/s/s)
+AccelerationTiltSpeed		1.35
+# How swiftly the vehicle recovers (r/s)
+AccelerationTiltRecovery	2.7
+# Maximum amount the vehicle can tilt due to acceleration, ever (r)
+MaxAccelerationTilt			0.25
+
+# How swiftly you assume the angle of a ramp you pass over (r/s)
+RampTilt					0.85
+
+StrafeTiltSpeed				.70
+StrafeTiltRecovery			1.45
+MaxStrafeTilt				0.45
+
+#
+# Special effects - p_01 only
+#
+GROUP Effects
+	ELEMENT EngineLeft
+	Parent	effect_engine01
+	Type	Glow
+	Size	1.9
+	Color	0x002299FF
+	ELEMENT END
+
+	ELEMENT EngineRight
+	Parent	effect_engine02
+	Type	Glow
+	Size	1.9
+	Color	0x002299FF
+	ELEMENT END
+GROUP END

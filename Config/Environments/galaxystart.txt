@@ -1,0 +1,50 @@
+# This demonstrates multiple bitmap levels.
+
+LightAngle		0
+LightElevation	20
+LightColor		0x00FFFFFF
+LightAmbient	0x00444444
+
+UseFog			True
+FogStart		100
+FogEnd			650
+FogColor		0x00000000
+
+NoSkyColor					0x00222222
+SimpleSkyZenithColorTop		0x00000000
+SimpleSkyHorizonColorTop	0x00000000
+SimpleSkyHorizonColorBot	0x00000000
+SImpleSkyZenithColorBot		180,60,0
+
+GROUP SkyLevels
+ELEMENT Moon
+	SkyMoveFraction		0.003
+ 	GROUP Bitmaps
+ 	ELEMENT Moon
+ 		BitmapFile		ganymede.tga
+ 		BitmapAngle		0
+ 		BitmapElev		-9
+ 		BitmapSize		2.5f
+ 		BitmapDims		256
+ 	ELEMENT END
+ 	GROUP END
+ELEMENT END
+ELEMENT Planet
+	SkyMoveFraction		0.5
+ 	GROUP Bitmaps
+ 	ELEMENT Planet
+ 		BitmapFile		planet.tga
+ 		BitmapAngle		0
+ 		BitmapElev		-15
+ 		BitmapSize		8.0f
+ 		BitmapDims		256
+ 	ELEMENT END
+ 	GROUP END
+ELEMENT END
+ELEMENT Background
+	SkyClearColor		0x00000000
+	SkyTextureBot		galaxy.bmp
+	SkyHeightBot		65.0f
+	SkyMoveFraction		0
+ELEMENT END
+GROUP END

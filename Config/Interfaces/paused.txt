@@ -1,0 +1,10 @@
+# This is the engine stats display interface.
+GROUP Interface
+	ELEMENT 	Paused
+	Type 		Text
+	Flags		IFACE_GLOBAL | IFACE_CENTERTEXT
+	Text		PAUSED
+	MaxLength	10
+	Font		Interface
+	ELEMENT END
+GROUP END

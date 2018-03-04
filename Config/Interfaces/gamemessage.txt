@@ -1,0 +1,11 @@
+# This displays big huge messages across the screen.
+GROUP Interface
+	ELEMENT 	GameMessage
+	Type 		Text
+#	Flags		IFACE_GLOBAL
+	MaxLength	256
+	XPosition	800
+	YPosition	40
+	Font		Interface
+	ELEMENT END
+GROUP END

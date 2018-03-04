@@ -1,0 +1,28 @@
+# An evil computer grid.
+
+LightAngle		0
+LightElevation	70
+LightColor		0x00FF0000
+LightAmbient	0x00886666
+
+NoSkyColor			0x00000000
+SimpleSkyZenithColorTop		0x00FF0000
+SimpleSkyHorizonColorTop	0x0009091A
+SimpleSkyHorizonColorBot	0x0009091A
+SImpleSkyZenithColorBot		0x00FF0000
+
+GROUP SkyLevels
+ELEMENT Grid
+	SkyTextureTop		redgrid.tga
+	SkyTextureBot		redgrid.tga
+	SkyHeightTop		55
+	SkyHeightBot		4
+	SkyMoveFraction		.03
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00111144
+	SkyZenithColorTop	0x002222FF
+	SkyHorizonColorBot	0x00111144
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

@@ -1,0 +1,523 @@
+# Enemy Debug Features
+
+# Do we want to show the scan "snout"?
+ShowScanSnout False
+
+# Do we want to show the player scan line?
+ShowPlayerScanLine False
+
+# Do we want to show the fire control lines?
+ShowFireControlLines False
+
+# Do we want to show the box which would enclose the top hemisphere of 
+# the collision sphere?
+ShowRadialCollBox False
+
+# Do we want to show the box collision volume?
+ShowRectCollBox False
+
+# Do we want one of the guys to be tagged?  If so, one dude will be tagged.
+# This guy can be avatared on and off.
+TagTestMode False
+
+# Bad guys to shewt
+
+# NOTES:
+# 1. All distance units unless otherwise noted are in meters.
+# 2. A Mass of >= 1,000,000.0 is considered infinite
+# 3. Collision priorities are in order where the highest value wins.
+# 4. The higher bullet restitution is the more a player's shots will knock an
+#    enemy around.
+# 5. PlayerRestitution is currently unused, but was supposed to be the amount of kick
+#    applied to the enemy after colliding with the player.
+# 6. Rotation speeds(ScanSpeed, TurnRate) are in revolutions / sec., not radians / sec.
+# 7. ScanSpeed is currently unused.
+# 8. FOVWidth is in degrees, not radians.  
+# 9. MaxElevDiffSeen is a difference of altitude (in m), not angle
+# 10. TurnError is in degrees, not radians (currently unused, though)
+# 11. Speeds are in m / s.
+# 12. Accelerations (and decelerations) are in m / s / s.
+# 13. MainProjReload is the reload time for a single shot within a burst. (in sec.)
+# 14. MainProjBurstLength is the number of shots / burst.
+# 15. MainProjBurstReload is the reload time between bursts. (in sec.)
+
+GROUP Enemies
+	ELEMENT Drone
+	Name 		Solid Fuel Drone
+	ID		0
+	Model		e_drone_01.AMO
+	ModelScale	3.0
+	HoverAltitude	2.8
+	HitPoints	1
+	Mass		7500.0
+	CollisionPriority	2
+	CollisionSphereRad	4.0
+	CollisionLength		10.0
+	CollisionWidth		3.5
+	CollisionHeight		3.5	
+	BulletRestitution	0.15
+	PlayerRestitution	0.0
+	Score		50
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	500.0
+	MaxElevDiffSeen 4.0
+	TurnError	2.0
+	TurnRate	0.5
+	MaxForwSpeed	50.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	250.0
+	ELEMENT END
+
+	ELEMENT BuzzBomb
+	Name		Buzz Bomb
+	ID		1
+	Model		e_buzzbomb_01.AMO
+	ModelScale	3.0
+	HoverAltitude	4
+	HitPoints	1
+	Mass		5000.0
+	CollisionPriority	1
+	CollisionSphereRad	2.8	
+	CollisionLength		4.5
+	CollisionWidth		4.5	
+	CollisionHeight		1.9
+	BulletRestitution	0.20
+	PlayerRestitution	1.0
+	Score		100
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	500.0
+	MaxElevDiffSeen 4.0
+	TurnError	2.0
+	TurnRate	0.3
+	MaxForwSpeed	50.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	250.0
+	ELEMENT END
+
+	ELEMENT Seeker
+	Name		Seeker
+	ID		5
+	Model		e_seeker_01.AMO
+	ModelScale	1.5
+	HoverAltitude	3.0
+	HitPoints	1
+	Mass		0.0
+	CollisionPriority	7
+	CollisionSphereRad	1.8	
+	CollisionLength		5.0
+	CollisionWidth		3.6	
+	CollisionHeight		3.6	
+	BulletRestitution	0.1
+	PlayerRestitution	0.0
+	Score		50
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	500.0
+	MaxElevDiffSeen 8.0
+	TurnError	0.5
+	TurnRate	0.25
+	MaxForwSpeed	40.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	500.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.5
+	MainProjSpeed	500.0
+	MainProjReload	2
+	ELEMENT END
+
+	ELEMENT MediumTurret
+	Name		Medium Turret
+	ID		6
+	Model		e_turret_02.AMO
+	ModelScale	2.0
+	HoverAltitude	0.001
+	HitPoints	3
+	Mass		10000000.0
+	CollisionPriority	6
+	CollisionSphereRad	4.0	
+	CollisionLength		8.1
+	CollisionWidth		9.2	
+	CollisionHeight		5.7	
+	BulletRestitution	0.0
+	PlayerRestitution	0.0
+	Score		150
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	325.0
+	MaxElevDiffSeen 4.0
+	TurnError	2.0
+	TurnRate	0.50
+	MaxForwSpeed	0.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	250.0
+	MainProjType	PlasmaShell
+	MainProjScale		1.25
+	MainProjSpeed		150.0
+	MainProjReload		0.5
+	MainProjBurstLength 	4
+	MainProjBurstReload	2.0
+	ELEMENT END
+
+	ELEMENT Scarab
+	Name		Flyer
+	ID		7
+	Model		e_flyer_01.AMO
+	ModelScale	1.5
+	HoverAltitude	2.8
+	HitPoints	3
+	Mass		20000.0
+	CollisionPriority	5
+	CollisionSphereRad	5.5	
+	CollisionLength		8.3
+	CollisionWidth		7.5	
+	CollisionHeight		3.0	
+	BulletRestitution	0.15
+	PlayerRestitution	0.0
+	Score		300
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	325.0
+	MaxElevDiffSeen 8.0
+	TurnError	2.0
+	TurnRate	0.5
+	MaxForwSpeed	50.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	250.0
+	MainProjType		PlasmaShell
+	MainProjScale		1.0
+	MainProjSpeed		175.0
+	MainProjReload		0.5
+	MainProjBurstLength 	3
+	MainProjBurstReload	2.0
+	ELEMENT END
+
+	ELEMENT Hunter
+	Name		Hunter
+	ID		8
+	Model		e_hunter_01.AMO
+	ModelScale	3.0
+	HoverAltitude	2.8
+	HitPoints	5
+	Mass		40000.0
+	CollisionPriority	8
+	CollisionSphereRad	5.5	
+	CollisionLength		14.0
+	CollisionWidth		10.0	
+	CollisionHeight		4.2	
+	BulletRestitution	0.05
+	PlayerRestitution	0.0
+	Score		450
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	500.0
+	MaxElevDiffSeen 8.0
+	TurnError	0.1
+	TurnRate	0.5
+	MaxForwSpeed	40.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	25.0
+	RevAccel	125.0
+	MaxStrafeSpeed	25.0
+	StrafeAccel	350.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.5
+	MainProjSpeed	500.0
+	MainProjReload	2.0
+	MainProjBurstLength 	1
+	MainProjBurstReload	2.0
+	ELEMENT END
+
+	ELEMENT Ironclad
+	Name		Ironclad
+	ID		9
+	Model		e_ironclad.AMO
+	ModelScale	2.5
+	HoverAltitude	0.5
+	HitPoints	20
+	Mass		45000.0
+	CollisionPriority	10
+	CollisionSphereRad	6.8	
+	CollisionLength		13.0
+	CollisionWidth		7.7	
+	CollisionHeight		5.3	
+	BulletRestitution	0.03
+	PlayerRestitution	0.0
+	Score		1500
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	325.0
+	MaxElevDiffSeen 8.0
+	TurnError	1
+	TurnRate	0.5
+	MaxForwSpeed	50.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	25.0
+	RevAccel	125.0
+	MaxStrafeSpeed	25.0
+	StrafeAccel	500.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.5
+	MainProjSpeed	300.0
+	MainProjReload		0.5
+	MainProjBurstLength 	1
+	MainProjBurstReload	0.5
+	ELEMENT END
+
+	ELEMENT SmallTurret
+	Name		Small Turret
+	ID		10
+	Model		e_turret_03.AMO
+	ModelScale	1.0
+	HoverAltitude	0.35
+	HitPoints	1
+	Mass		10000000.0
+	CollisionPriority	3
+	CollisionSphereRad	3.4	
+	CollisionLength		6.8
+	CollisionWidth		6.8	
+	CollisionHeight		8.5	
+	BulletRestitution	0.0
+	PlayerRestitution	0.0
+	Score		75
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	325.0
+	MaxElevDiffSeen 4.0
+	TurnError	2.0
+	TurnRate	0.50
+	MaxForwSpeed	0.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	250.0
+	MainProjType	PlasmaShell
+	MainProjScale	1
+	MainProjSpeed	120.0
+	MainProjReload		1.0
+	MainProjBurstLength 	3
+	MainProjBurstReload	2.0
+	ELEMENT END
+
+	ELEMENT LargeTurret
+	Name		Large Turret
+	ID		11
+	Model		e_turret_01.AMO
+	ModelScale	1.0
+	HoverAltitude	0.001
+	HitPoints	20
+	Mass		10000000.0
+	CollisionPriority	12
+	CollisionSphereRad	18.0	
+	CollisionLength		48.0
+	CollisionWidth		48.0	
+	CollisionHeight		16.0	
+	BulletRestitution	0.0
+	PlayerRestitution	0.0
+	Score		1000
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	500.0
+	MaxElevDiffSeen 16.0
+	TurnError	2.0
+	TurnRate	0.50
+	MaxForwSpeed	0.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	0.0
+	RevAccel	125.0
+	MaxStrafeSpeed	0.0
+	StrafeAccel	250.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.7
+	MainProjSpeed	150.0
+	MainProjReload	0.25
+	MainProjBurstLength 	7
+	MainProjBurstReload	2.0
+	ELEMENT END
+
+	ELEMENT Spinner
+	Name 		Spinner
+	ID		12
+	Model		e_spinnything_01.AMO
+	ModelScale	0.5
+	HoverAltitude	3.0
+	HitPoints	1
+	Mass		15000.0
+	CollisionPriority	4
+	CollisionSphereRad	2.0	
+	CollisionLength		2.0
+	CollisionWidth		2.0	
+	CollisionHeight		3.0	
+	BulletRestitution	0.15
+	PlayerRestitution	0.0
+	Score		25
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	325.0
+	MaxElevDiffSeen 8.0
+	TurnError	0.5
+	TurnRate	0.5
+	MaxForwSpeed	70.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	25.0
+	RevAccel	125.0
+	MaxStrafeSpeed	25.0
+	StrafeAccel	500.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.5
+	MainProjSpeed	500.0
+	MainProjReload	2
+	ELEMENT END
+
+	ELEMENT Firebat
+	Name 		Firebat
+	ID		13
+	Model		e_firebat.AMO
+	ModelScale	1.9
+#	HoverAltitude	2.8
+	HoverAltitude	2.2
+	HitPoints	10
+	Mass		20000.0
+	CollisionPriority	9
+	CollisionSphereRad	5.0	
+	CollisionLength		10.0
+	CollisionWidth		6.0	
+	CollisionHeight		3.0	
+	BulletRestitution	0.07
+	PlayerRestitution	0.0
+	Score		900
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	325.0
+	MaxElevDiffSeen 8.0
+	TurnError	2.0
+	TurnRate	0.5
+	MaxForwSpeed	70.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	20.0
+	RevAccel	125.0
+	MaxStrafeSpeed	20.0
+	StrafeAccel	250.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.0
+	MainProjSpeed	85.0
+	MainProjReload	0.01
+	MainProjBurstLength 	7
+	MainProjBurstReload	0.75
+	ELEMENT END
+
+	ELEMENT Dagger
+	Name 		Dagger
+	ID		14
+	Model		dagger.AMO
+	ModelScale	3.0
+	HoverAltitude	2.5
+	HitPoints	15
+	Mass		30000.0
+	CollisionPriority	11
+	CollisionSphereRad	5.3	
+	CollisionLength		11.0
+	CollisionWidth		8.0	
+	CollisionHeight		3.5	
+	BulletRestitution	0.07
+	PlayerRestitution	0.0
+	Score		1000
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	500.0
+	MaxElevDiffSeen 8.0
+	TurnError	2.0
+	TurnRate	0.75
+	MaxForwSpeed	50.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	20.0
+	RevAccel	125.0
+	MaxStrafeSpeed	40.0
+	StrafeAccel	250.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.0
+	MainProjSpeed		250.0
+	MainProjReload		0.05
+	MainProjBurstLength 	3
+	MainProjBurstReload	1.25
+	ELEMENT END
+
+	ELEMENT Fighter
+	Name 		Fighter
+	ID		15
+	Model		e_spybot_01.AMO
+	ModelScale	1.3
+	HoverAltitude	4.0
+	HitPoints	2
+	Mass		100000.0
+	CollisionPriority	2
+	CollisionSphereRad	1.7	
+	CollisionLength		5.4
+	CollisionWidth		5.4	
+	CollisionHeight		2.0	
+	BulletRestitution	0.1
+	PlayerRestitution	0.0
+	Score		150
+	ScanSpeed	0.5
+	FOVWidth	360.0	
+	SightDistance	1000.0
+	MaxElevDiffSeen 40.0
+	TurnError	3.0
+	TurnRate	0.5
+	MaxForwSpeed	150.0
+	ForwAccel	250.0
+	BrakeDecel	250.0
+	Inertia		50.0
+	MaxRevSpeed	25.0
+	RevAccel	125.0
+	MaxStrafeSpeed	25.0
+	StrafeAccel	500.0
+	MainProjType	PlasmaShell
+	MainProjScale	1.0
+	MainProjSpeed	85.0
+	MainProjReload  0.5
+	MainProjBurstLength 	1
+	MainProjBurstReload	0.5
+	ELEMENT END
+GROUP END

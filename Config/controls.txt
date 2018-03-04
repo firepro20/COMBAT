@@ -1,0 +1,47 @@
+#Auto-Generated Configuration
+#
+#12/20/2001 16:30:38
+#
+#
+GROUP Controls
+	GROUP TurnLeft
+		Gamepad JoyLeft
+		Key 0XCB
+	GROUP END
+	GROUP TurnRight
+		Gamepad JoyRight
+		Key 0XCD
+	GROUP END
+	GROUP Forward
+		Gamepad JoyUp
+		Key 0XC8
+	GROUP END
+	GROUP Backward
+		Gamepad JoyDown
+		Key 0XD0
+	GROUP END
+	GROUP Handbrake
+		Gamepad Button2
+		Key 0X2D
+	GROUP END
+	GROUP ViewChange
+		Gamepad Button4
+		Key 0X3F
+	GROUP END
+	GROUP Fire
+		Gamepad Button1
+		Key 0X39
+	GROUP END
+	GROUP StrafeLeft
+		Gamepad Button7
+		Key 0X2C
+	GROUP END
+	GROUP StrafeRight
+		Gamepad Button8
+		Key 0X2E
+	GROUP END
+	GROUP Pause
+		Gamepad Button10
+		Key 0X19
+	GROUP END
+GROUP END

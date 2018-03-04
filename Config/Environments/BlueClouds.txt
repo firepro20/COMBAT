@@ -1,0 +1,33 @@
+# Blue Clouds.
+
+LightAngle		0
+LightElevation	80
+LightColor		0xA2C1EF
+LightAmbient	0x719CDF
+
+UseFog			True
+FogStart		400
+FogEnd			900
+FogColor		0x545D82
+
+NoSkyColor					0x0x00CDDCF9
+SimpleSkyZenithColorTop		0x002C2C9B
+SimpleSkyHorizonColorTop	0x00CDDCF9
+SimpleSkyHorizonColorBot	0x00CDDCF9
+SImpleSkyZenithColorBot		0x002C2C9B
+
+GROUP SkyLevels
+ELEMENT Grid
+	SkyTextureTop		BlueClouds01.bmp
+	SkyTextureBot		BlueClouds01.bmp
+	SkyHeightTop		55
+	SkyHeightBot		30
+	SkyMoveFraction		.03
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00111144
+	SkyZenithColorTop	0x002222FF
+	SkyHorizonColorBot	0x00111144
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

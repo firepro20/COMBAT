@@ -1,0 +1,55 @@
+#
+# Configuration File for Terran Viewer
+#
+
+# Sound Parameters
+#
+# Play sound? (including music)
+Sound True
+# Sound volume (0 - 1)... note that this affects music too! Not working right now.
+SoundVol 1
+# Play looping music?
+Music False
+# What tune?
+MusicWav SW-03.wav
+# Music volume (0 - 1) Not working right now.
+MusicVol 1
+
+# Control attributes
+#
+# Mouse cursor sensitivity? (this affects how fast the mouse cursor moves about the screen)
+MouseSensitivity 0.9
+# Control sensitivity? (this affects how swiftly the cameras rotate under mouse control)
+ControlSensitivity 0.5
+# Maximum amount of time that may pass between frames before the game slows down? (ms)
+MaxFrameLength 150
+
+# Font information
+GROUP Fonts
+	ELEMENT	Interface
+    BitmapName		DesignersRepublic16.bmp
+    CharWidth		16
+    CharHeight		16
+	CharsPerLine	16
+	Leading			0
+	Spacing			0
+	ELEMENT END
+	ELEMENT Console
+	BitmapName		Hofstadter8.bmp
+	CharWidth		8
+	CharHeight		8
+	CharsPerLine	16
+	Leading			0
+	Spacing			2
+	ELEMENT END
+GROUP END
+
+# Rendering Attributes
+#
+# Screen resolution?
+VideoWidth 800
+VideoHeight 600
+# Bit depth? (16 or 32)
+VideoDepth 32
+# Windowed mode?
+WindowedMode False

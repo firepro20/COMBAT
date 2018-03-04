@@ -1,0 +1,45 @@
+# Object test.
+
+LightAngle		122
+LightElevation	45
+LightColor		0x0099CCDD
+LightAmbient	0x005566AA
+
+UseFog			False
+FogStart		100
+FogEnd			450
+FogColor		0x00000000
+
+NoSkyColor			0x0067E5FC
+SimpleSkyZenithColorTop		0x0067E5FC
+SimpleSkyHorizonColorTop	0x000D179A
+SimpleSkyHorizonColorBot	0x000D179A
+SImpleSkyZenithColorBot		0x0067E5FC
+
+GROUP SkyLevels
+ELEMENT Dome
+	SkyMoveFraction		1.0
+	GROUP Objects
+	ELEMENT Dome
+		Model			dome.AMO
+		ObjSize			1.0
+		ObjAngle		0
+		ObjElev			0
+	ELEMENT END
+	GROUP END
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00000044
+	SkyZenithColorTop	0x00000000
+	SkyHorizonColorBot	0x00000044
+	SkyZenithColorBot	0x000066AA
+	GROUP Bitmaps
+	ELEMENT Earth
+ 		BitmapFile		earth.tga
+ 		BitmapAngle		12
+ 		BitmapElev		-12
+ 		BitmapSize		4.0f
+ 	ELEMENT END
+	GROUP END
+ELEMENT END
+GROUP END

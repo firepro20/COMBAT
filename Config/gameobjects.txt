@@ -1,0 +1,11 @@
+# Config of game entities in Combat
+
+# Music
+INCLUDE music.txt
+# Enemies
+INCLUDE enemies.txt
+# Powerups
+INCLUDE powerups.txt
+
+# Stuff used by editor
+INCLUDE editor.txt

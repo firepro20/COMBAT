@@ -1,0 +1,38 @@
+# A wacky skybox I'm a-tweakin'.
+
+LightAngle		0
+LightElevation	65
+LightColor		0x00EEFFFF
+
+UseFog			True
+FogStart		100
+FogEnd			850
+FogColor		0x008888FF
+
+NoSkyColor					0x003366FF
+SimpleSkyZenithColorTop		0x00FFFFFF
+SimpleSkyHorizonColorTop	0x009999AA
+SimpleSkyHorizonColorBot	0x00AAAAFF
+SimpleSkyHeightBot			2.05
+SImpleSkyZenithColorBot		0x003366FF
+
+GROUP SkyLevels
+ELEMENT Clouds
+	SkyTextureBot		Ocean04.bmp
+	SkyHeightBot		2.05
+	SkyMoveFraction		.01
+	TextureZoomBot		40.0
+ELEMENT END
+ELEMENT Background
+	SkyTextureTop		whiteclouds01.bmp
+	SkyTransparencyTop	transp-whiteclouds01.bmp
+	SkyHeightTop		33
+	SkyRotateSpeed		.00005
+	SkyMoveFraction		.1
+ELEMENT END
+ELEMENT Bg2
+	SkyTextureTop		SimpleSky01.bmp
+	SkyHeightTop		35
+	SkyMoveFraction		.8
+ELEMENT END
+GROUP END

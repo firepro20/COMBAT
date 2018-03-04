@@ -1,0 +1,53 @@
+# First VR Sky by Tony Gaddis.
+
+
+LightAngle		0
+LightElevation	5
+LightColor		0x94A0B3
+LightAmbient	0x94A0B3
+
+NoSkyColor					0x00280E44
+SimpleSkyZenithColorTop		0x00280E44
+SimpleSkyHorizonColorTop	0x001E3F96
+SimpleSkyHorizonColorBot	0x001E3F96
+SImpleSkyZenithColorBot		0x00280E44
+
+GROUP SkyLevels
+ELEMENT Moon
+	SkyMoveFraction		0.003
+ 	GROUP Bitmaps
+ 	ELEMENT Moon
+ 		BitmapFile		blackmoon.tga
+ 		BitmapAngle		270
+ 		BitmapElev		-9
+ 		BitmapSize		8.0f
+ 		BitmapDims		256
+ 	ELEMENT END
+ 	GROUP END
+ELEMENT END
+ELEMENT Planet
+	SkyMoveFraction		0.5
+	SkyRotateSpeed		.00002
+ 	GROUP Bitmaps
+ 	ELEMENT Planet
+ 		BitmapFile		n9.tga
+ 		BitmapAngle		275
+ 		BitmapElev		-15
+ 		BitmapSize		8.0f
+ 		BitmapDims		256
+ 	ELEMENT END
+ 	GROUP END
+ELEMENT END
+ELEMENT Background
+	SkyClearColor		0x00000000
+	SkyTextureBot		blackhole.bmp
+	SkyHeightBot		65.0f
+	SkyMoveFraction		0
+ELEMENT END
+ELEMENT Background
+	SkyClearColor		0x00000000
+	SkyTextureTop		blackhole.bmp
+	SkyHeightTop		65.0f
+	SkyMoveFraction		0
+ELEMENT END
+GROUP END

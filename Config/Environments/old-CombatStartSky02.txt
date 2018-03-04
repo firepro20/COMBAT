@@ -1,0 +1,21 @@
+# A wacky skybox I'm a-tweakin'.
+
+NoSkyColor			0x0073C3F9
+SimpleSkyZenithColorTop		0x00BBF8F7
+SimpleSkyHorizonColorTop	0x00119DFB
+SimpleSkyHorizonColorBot	0x00119DFB
+SImpleSkyZenithColorBot		0x00BBF8F7
+
+GROUP SkyLevels
+ELEMENT Clouds
+	SkyTextureTop		whiteclouds01.bmp
+	SkyTransparencyTop	transp-whiteclouds01.bmp
+	SkyMoveFraction		.03
+	SkyRotateSpeed		.0001
+ELEMENT END
+ELEMENT Grid
+	SkyTextureTop		SimpleSky01.bmp
+	SkyTextureBot		Ocean03.bmp
+	SkyMoveFraction		.1
+ELEMENT END
+GROUP END

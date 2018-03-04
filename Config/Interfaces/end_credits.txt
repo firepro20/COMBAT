@@ -1,0 +1,23 @@
+# This is the game over message interface.
+GROUP Interface
+	ELEMENT 	FadeToBlack
+	Type 		Box
+	Flags		IFACE_BLEND_ALPHA | IFACE_FILL
+	XPosition	0
+	YPosition	0
+	Width		800
+	Height		600
+	Color		0x00FFFFFF
+
+		GROUP Children
+		ELEMENT 	CreditsRoll
+		Type		Text
+		Color		0x00FFFFFF
+		MaxLength	2048
+		Flags		IFACE_BLEND_ALPHA | IFACE_CENTERTEXT
+		Text		CREDITS
+		Font		Interface
+		ELEMENT END
+		GROUP END
+	ELEMENT END
+GROUP END

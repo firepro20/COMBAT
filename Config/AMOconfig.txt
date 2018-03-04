@@ -1,0 +1,74 @@
+#
+# Configuration File for AMOViewer
+#
+
+# Display on opening screen
+#MOTD1 March Build
+#MOTD2 "How are you Gentlemen!!"
+
+# Sound Parameters
+#
+# Play sound? (including music)
+Sound True
+# Sound volume (0 - 1)... note that this affects music too! Not working right now.
+SoundVol 1
+# Play looping music?
+Music False
+# What tune?
+MusicWav SW-03.wav
+# Music volume (0 - 1) Not working right now.
+MusicVol 1
+
+# Physics Attributes
+#
+# Do wind?
+Wind True
+# Wind strength? (c. 20 = normal, c. 200 = gale-force)
+WindPower 20
+# Wind angle (degrees clockwise from north)?
+WindDirection 315
+# Air viscosity? (0.45 = normal, 0.015 = less)
+AirViscosity 0.45
+# Gravity? (1.0 = Earth normal)
+Gravity 1.0
+# Framerate to run physics engine at? (fps)
+PhysicsFramerate 100
+
+# Control attributes
+#
+# Mouse cursor sensitivity? (this affects how fast the mouse cursor moves about the screen)
+MouseSensitivity 0.9
+# Control sensitivity? (this affects how swiftly the cameras rotate under mouse control)
+ControlSensitivity 0.5
+
+# Camera attributes
+#
+# Use the debug camera (no mouse control, no autoswitch)?
+DebugCamera False
+# Saved floating camera positions
+INCLUDE camconf.txt
+# Maximum amount of time that may pass between frames before the game slows down? (ms)
+MaxFrameLength 150
+
+# Font information
+FontName1	AndaleMono19.bmp
+CharWidth1	10
+CharHeight1	19
+
+# Font information
+FontName2	AndaleMono10.bmp
+CharWidth2	6
+CharHeight2	12
+
+# Rendering Attributes
+#
+# Screen resolution?
+VideoWidth 800
+VideoHeight 600
+# Bit depth? (16 or 32)
+VideoDepth 32
+# Windowed mode?
+WindowedMode False
+
+
+

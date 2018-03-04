@@ -1,0 +1,33 @@
+#Auto-Generated Configuration
+#
+#11/9/2001 20:35:40
+#
+#
+GROUP HiScore
+	GROUP Times
+		Placeholder 0
+		Levels\lv01.lvl 45
+	GROUP END
+	GROUP Scores
+		GROUP 1
+			Score 100000
+			Name MBS
+		GROUP END
+		GROUP 2
+			Score 80000
+			Name MBS
+		GROUP END
+		GROUP 3
+			Score 60000
+			Name MBS
+		GROUP END
+		GROUP 4
+			Score 40000
+			Name MBS
+		GROUP END
+		GROUP 5
+			Score 20000
+			Name MBS
+		GROUP END
+	GROUP END
+GROUP END

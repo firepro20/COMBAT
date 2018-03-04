@@ -1,0 +1,44 @@
+# A bunch of rearranged stuff from Scorched World's Irish sky.
+
+LightAngle		210
+LightElevation	60
+LightColor		0x00CCEEDD
+LightAmbient	0x00AAAAAA
+
+UseFog			True
+FogStart		100
+FogEnd			650
+FogColor		0x00335566
+
+NoSkyColor					0x00799CAA
+SimpleSkyZenithColorTop		0x00FFFFFF
+SimpleSkyHorizonColorTop	0x00799CAA
+SimpleSkyHorizonColorBot	0x00799CAA
+SImpleSkyZenithColorBot		0x00000000
+
+GROUP SkyLevels
+ELEMENT Clouds
+	SkyTextureBot		cloudtest03.bmp
+	SkyTransparencyBot	transp-cloudtest03.bmp
+	SkyTextureTop		cloudtest03.bmp
+	SkyTransparencyTop	transp-cloudtest03.bmp
+	SkyMoveFraction		.03
+	SkyRotateSpeed		.00002
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00799CAA
+	SkyZenithColorTop	0x00FFFFFF
+	SkyHorizonColorBot	0x00799CAA
+	SkyZenithColorBot	0x00000000
+ 	GROUP Bitmaps
+ 	ELEMENT Moon
+ 		BitmapFile		moonslice02.bmp
+ 		BitmapTrans		transp-moonslice01.bmp
+ 		BitmapAngle		45
+ 		BitmapElev		-25
+ 		BitmapSize		16.0f
+ 		BitmapDims		256
+ 	ELEMENT END
+ 	GROUP END
+ELEMENT END
+GROUP END

@@ -1,0 +1,68 @@
+#
+# Tank basic description
+#
+
+TankName	Dagger
+LongName	Dagger
+Model		dagger.AMO
+ShieldModel	shield_09.AMO
+ShieldColor	0x0099FF99
+Scale		1.15
+
+#
+# Vehicle dimensions
+#
+
+# Crosswise "radius" of vehicle (m)
+Width				2.8
+# Lengthwise "radius" of vehicle (m)
+Length				5.5
+# Height of vehicle's center (m)
+VCenter				1.5
+Scale				1.3
+
+INCLUDE tankmotion.txt
+
+#
+# Special effects
+#
+GROUP Effects
+	ELEMENT EngineLeft
+	Parent	effect1
+	Type	Glow
+	Size	2.8
+	Color	0x0011CC11
+	ELEMENT END
+
+	ELEMENT EngineRight
+	Parent	effect2
+	Type	Glow
+	Size	2.8
+	Color	0x0011CC11
+	ELEMENT END
+GROUP END
+
+# How fast the speed of tipping over goes up when falling off an edge (r/s/s)
+FallingTiltAccel	4.5
+# Factor that propels you away from a wall when you tip over it
+TipMoveFactor		100
+# Maximum amount you tip over when falling off an edge (r)
+MaxFallingTilt		.45
+# How quickly you recover from that when you've gone over the edge (r/s)
+FallingTiltRecover	4.5
+# The vehicle's banking factor, based on to your speed and how hard it's turning
+TiltAroundCornersFactor		0.002
+# How swiftly you tilt forwards/backwards as you accelerate (r/s/s)
+AccelerationTiltSpeed		1.35
+# How swiftly the vehicle recovers (r/s)
+AccelerationTiltRecovery	2.7
+# Maximum amount the vehicle can tilt due to acceleration, ever (r)
+MaxAccelerationTilt			0.25
+# How swiftly you assume the angle of a ramp you pass over (r/s)
+RampTilt					0.85
+# How swiftly you tilt sideways as you strafe
+StrafeTiltSpeed				.70
+# How swiftly you recover from strafe tilt
+StrafeTiltRecovery			1.45
+# Max amount of tilting due to strafe
+MaxStrafeTilt				0.45

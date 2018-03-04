@@ -1,0 +1,113 @@
+# Patroller boss config
+
+# boss ID
+ID				3
+# displayed version
+Version			0.40
+# displayed name
+Name			Patroller
+# model
+ModelName		e_patroller.AMO
+# scale fac
+Scale			1.5
+# hover altitude
+Altitude		1.5
+# points awarded for defeating it
+Score			4000
+# how many goodies come out
+TreasureType	1
+TreasureCount	2
+
+TopSpeed		100
+Acceleration	75
+BrakePower		50
+TurnSpeed		1.5
+
+# hull of boss is invulnerable?
+Invulnerable		True
+# name of collision volume
+CollisionVolume		Collision
+# max collision radius
+CollisionRadius		36
+# hit points
+HitPoints			40
+
+InnerRingMinSpeed	50
+InnerRingMaxSpeed	85
+InnerRingStartNode	5
+InnerRingStartDirection	-1
+OuterRingMinSpeed	65
+OuterRingMaxSpeed	100
+OuterRingStartNode	6
+OuterRingStartDirection	-1
+
+GROUP Turrets
+	ELEMENT PercGun
+	ChildName		Turret
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	5.5
+#	CollisionVolume	Collision1
+	NumBarrels		2
+	StartAngle		0
+	MinAngle		-45
+	MaxAngle		45
+	SweepAttack		False
+	SweepAngle		30
+	RotationSpeed	1.50
+	ClipSize		5
+	ShotInterval	.55
+	ShotSpeed		145
+	ReloadTime		1.00
+	HitPoints		30
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT LeftPlasma
+	ModelName		e_patroller_turret.AMO
+	AttachPoint		Attach
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	3.5
+	NumBarrels		1
+	Scale			1.3
+	StartAngle		270
+	MinAngle		135
+	MaxAngle		315
+	SweepAttack		False
+	SweepAngle		30
+	RotationSpeed	1.50
+	ClipSize		5
+	ShotInterval	.55
+	ShotSize		1.5
+	ShotSpeed		145
+	ReloadTime		1.00
+	HitPoints		10
+	Score			350
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT RightPlasma
+	ModelName		e_patroller_turret.AMO
+	AttachPoint		Attact1
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	3.5
+	NumBarrels		1
+	Scale			1.3
+	StartAngle		90
+	MinAngle		45
+	MaxAngle		215
+	SweepAttack		False
+	SweepAngle		30
+	RotationSpeed	1.50
+	ClipSize		5
+	ShotInterval	.55
+	ShotSize		1.5
+	ShotSpeed		145
+	ReloadTime		1.00
+	HitPoints		10
+	Score			350
+	TreasureType	2
+	ELEMENT END
+GROUP END

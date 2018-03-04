@@ -1,0 +1,515 @@
+StartMenu	MainMenu
+TitleFontSize	2.0
+MenuFontSize	1.5
+UnselectColor	0x00FFFFFF
+SelectColor		0x00EEEE22
+BackgroundImage		menubackground2.bmp
+
+GROUP Menus
+	ELEMENT	MainMenu
+	Title	[MAIN MENU]
+	Align	RIGHT
+	FontSize	1.5
+	GROUP Items
+		ELEMENT	Singleplayer
+		Title	SINGLE PLAYER
+		Type	CallMenu
+		Menu	SinglePlayerMenu
+		ELEMENT END
+
+		ELEMENT	Multiplayer
+		Title	MULTIPLAYER
+		Type	CallMenu
+		Menu	MultiplayerMenu
+		ELEMENT END
+
+		ELEMENT	GameSetup
+		Title	GAME SETUP
+		Type	CallMenu
+		Menu	GameSetupMenu
+		ELEMENT END
+
+		ELEMENT	Quit
+		Title	QUIT
+		Type	ConfirmDialog
+		Query	LEAVE GAME:|nARE YOU SURE?
+		Action	QUIT
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT	SinglePlayerMenu
+	Title	[SINGLE PLAYER]
+	Align	LEFT
+	FontSize	1.5
+	Cancel	MainMenu
+	GROUP Items
+		ELEMENT	NormalGame
+		Title	PLAY NORMAL GAME
+		Level	start.lvl
+		Action	PLAY_GAME
+		ELEMENT END
+
+		ELEMENT	TutorialGame
+		Title	PLAY TUTORIAL GAME
+		Level	tu01.lvl
+		Action	PLAY_GAME
+		ELEMENT END
+
+		ELEMENT	UserLevel
+		Title	PLAY USER LEVEL
+		Type	TextDialog
+		Query	ENTER LEVEL NAME
+		Action	PLAY_GAME
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT MultiplayerMenu
+	Title	[MULTIPLAYER]
+	Align	LEFT
+	FontSize	1.5
+	Cancel	MainMenu
+	GROUP Items
+		ELEMENT Server
+		Title	START NEW GAME
+		Type	CallMenu
+		Menu	MultiServerMenu
+		ELEMENT END
+
+		ELEMENT Client
+		Title	JOIN GAME
+		Type	CallMenu
+		Menu	MultiClientMenu
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT MultiServerMenu
+	Title	[START MP SERVER]
+	Align	LEFT
+	FontSize	1.0
+	Cancel	MultiplayerMenu
+	GROUP Items
+		ELEMENT Start
+		Title	START GAME
+		Action	START_SERVER
+		ELEMENT END
+
+		ELEMENT SelectLevel
+		Title	SELECT LEVEL
+		Action	SET_MP_LEVEL
+		ELEMENT END
+
+		ELEMENT ServerName
+		Title	SERVER NAME
+		Type	TextDialog
+		Action	SET_SERVER_NAME
+		ELEMENT END
+
+		ELEMENT ScoreLimit
+		Title	POINT LIMIT
+		Type	NumberDialog
+		Action	SET_POINT_LIMIT
+		ELEMENT END
+
+		ELEMENT TimeLimit
+		Title	TIME LIMIT
+		Type	NumberDialog
+		Action	SET_TIME_LIMIT
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT MultiClientMenu
+	Title	[JOIN MP GAME]
+	Align	LEFT
+	FontSize	1.0
+	Cancel	MultiplayerMenu
+	GROUP Items
+		ELEMENT ServersFound
+		Title	JOIN LOCAL SERVER
+		Action	JOIN_LOCAL_SERVER
+		ELEMENT END
+
+		ELEMENT NetServer
+		Title	JOIN INTERNET SERVER
+		Type	TextDialog
+		Action	JOIN_NET_SERVER
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT GameSetupMenu
+	Title	[GAME SETUP]
+	Align	RIGHT
+	FontSize	1.5
+	Cancel	MainMenu
+	GROUP Items
+		ELEMENT PlayerSetup
+		Title	PLAYER SETUP
+		Type	CallMenu
+		Menu	PlayerSetupMenu
+		ELEMENT END
+
+		ELEMENT ControlSetup
+		Title	CONTROL SETUP
+		Type	CallMenu
+		Menu	ControlSetupMenu
+		ELEMENT END
+
+		ELEMENT GameOptions
+		Title	OPTIONS SETUP
+		Type	CallMenu
+		Menu	GameOptionsMenu
+		ELEMENT END
+
+		ELEMENT MultiSetup
+		Title	NETWORK SETUP
+		Type	CallMenu
+		Menu	NetworkSetupMenu
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT NetworkSetupMenu
+	Title	[NETWORK SETUP]
+	Align	LEFT
+	FontSize	1.0
+	Cancel	GameSetupMenu
+	GROUP 	Items
+		ELEMENT NetSpeed
+		Title	COMM SPEED
+		Type	MultipleChoice
+		GROUP Choices
+			ELEMENT Slow
+			Value	DIAL-UP MODEM
+			ELEMENT END
+			ELEMENT Fast
+			Value	CABLE/DSL/LAN
+			ELEMENT END
+		GROUP END
+		ACTION		SET_NET_SPEED
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT	PlayerSetupMenu
+	Title	[PLAYER SETUP]
+	Align	LEFT
+	FontSize	1.0
+	Cancel	GameSetupMenu
+	GROUP	Items
+		ELEMENT	Lives
+		Title		LIVES
+		Type		MultipleChoice
+		GROUP Choices
+			ELEMENT	3
+			Value	3
+			ELEMENT END
+			ELEMENT 5
+			Value	5
+			ELEMENT END
+		GROUP END
+		Action		SET_LIVES
+		ELEMENT END
+
+		ELEMENT	Health
+		Title		ARMOR
+		Type		MultipleChoice
+		GROUP Choices
+			ELEMENT	3
+			Value	3
+			ELEMENT END
+			ELEMENT 5
+			Value	5
+			ELEMENT END
+		GROUP END
+		Action		SET_HEALTH
+		ELEMENT END
+
+		ELEMENT	TankModel
+		Title		CHOOSE TANK MODEL
+		Action		CHOOSE_TANK
+		GROUP Tanks
+			ELEMENT Axiomatic
+			Name	Axiomatic
+			Model	p_01.AMO
+			ELEMENT END
+			ELEMENT Raven
+			Name	Raven
+			Model	p_02.AMO
+			YAdjust	2.0
+			ELEMENT END
+			ELEMENT Caterpillar
+			Name	Caterpillar
+			Model	p_03.AMO
+			ELEMENT END
+			ELEMENT Sledgehammer
+			Name	Sledgehammer
+			Model	p_04.AMO
+			YAdjust	-.5
+			ELEMENT END
+			ELEMENT Shinden
+			Name	Shinden
+			Model	p_05.AMO
+			YAdjust -2.1
+			ELEMENT END
+			ELEMENT Hyrda
+			Name	Hydra
+			Model	p_06.AMO
+			YAdjust	0.0
+			ELEMENT END
+			ELEMENT Firebat
+			Name	Firebat
+			Model	p_08.AMO
+			Secret	3
+			YAdjust	1.2
+			ELEMENT END
+			ELEMENT Ironclad
+			Name	Ironclad
+			Model	p_07.AMO
+			Secret	5
+			ELEMENT END
+			ELEMENT	Dagger
+			Name	Dagger
+			Model	dagger.AMO
+			Scale	1.3
+			Secret	4
+			ELEMENT END
+			ELEMENT Sente
+			Name	Sente
+			Model	egg_tank.AMO
+			Secret	6
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+		
+		ELEMENT	PlayerName
+		Title		PLAYER NAME
+		Type		TextDialog
+		Query		ENTER PLAYER NAME
+		Action		SET_PLAYER_NAME
+		ELEMENT END
+
+		ELEMENT	ClearHighScores
+		Title		CLEAR HIGH SCORES
+		Type		ConfirmDialog
+		Query		CLEAR ALL|nHIGH SCORES|nAND TIME RECORDS:|nARE YOU SURE?
+		Action		CLEAR_HIGH_SCORES
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT ControlSetupMenu
+	Title	[CONTROL SETUP]
+	Align	LEFT
+	FontSize	1.0
+	Spacing		35
+	Cancel	GameSetupMenu
+	GROUP	Items
+		ELEMENT Method
+		Type		MultipleChoice
+		GROUP Choices
+			ELEMENT Keyboard
+			Value	KEYBOARD
+			ELEMENT END
+			ELEMENT Joystick
+			Value	JOYSTICK
+			ELEMENT END
+		GROUP END
+		Action		CONTROL_METHOD
+		ELEMENT END
+
+		ELEMENT	Forward
+		Title		FORWARD
+		Type		SetControl
+		Action		SET_FORWARD_CONTROL
+		ELEMENT END
+
+		ELEMENT	Reverse
+		Title		BACKWARD
+		Type		SetControl
+		Action		SET_BACKWARD_CONTROL
+		ELEMENT END
+	
+		ELEMENT	Left
+		Title		LEFT
+		Type		SetControl
+		Action		SET_LEFT_CONTROL
+		ELEMENT END
+
+		ELEMENT	Right
+		Title		RIGHT
+		Type		SetControl
+		Action		SET_RIGHT_CONTROL
+		ELEMENT END
+
+		ELEMENT	Fire
+		Title		FIRE
+		Type		SetControl
+		Action		SET_FIRE_CONTROL
+		ELEMENT END
+
+		ELEMENT	StrafeLeft
+		Title		STRAFE LEFT
+		Type		SetControl
+		Action		SET_STRAFELEFT_CONTROL
+		ELEMENT END
+
+		ELEMENT	StrafeRight
+		Title		STRAFE RIGHT
+		Type		SetControl
+		Action		SET_STRAFERIGHT_CONTROL
+		ELEMENT END
+
+		ELEMENT	Brake
+		Title		EMERGENCY BRAKE
+		Type		SetControl
+		Action		SET_BRAKE_CONTROL
+		ELEMENT END
+
+		ELEMENT	ChangeView
+		Title		CHANGE VIEW
+		Type		SetControl
+		Action		SET_VIEW_CONTROL
+		ELEMENT END
+
+		ELEMENT	Pause
+		Title		PAUSE
+		Type		SetControl
+		Action		SET_PAUSE_CONTROL
+		ELEMENT END
+
+		ELEMENT	Reset
+		Title		RESTORE DEFAULTS
+		Type		ConfirmDialog
+		Query		RESET THIS|nCONTROL TYPE|nTO DEFAULTS:|nARE YOU SURE?
+		Action		RESET_DEFAULT_CONTROLS
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+	ELEMENT GameOptionsMenu
+	Title	[OPTIONS]
+	Align	LEFT
+	FontSize	1.0
+	Spacing		35
+	Cancel	GameSetupMenu
+	GROUP	Items
+		ELEMENT SFX
+		Title		SFX
+		Type		MultipleChoice
+		Action		SET_SOUND
+		GROUP Choices
+			ELEMENT Off
+			Value	0
+			ELEMENT END
+			ELEMENT On
+			Value	1
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+
+		ELEMENT SFXVol
+		Title		SFX VOLUME
+		Type		NumericChoice
+		Low			0
+		High		9
+		Step		1
+		Action		SET_SOUND_VOLUME
+		ELEMENT END
+
+		ELEMENT Music
+		Title		Music
+		Type		MultipleChoice
+		Action		SET_MUSIC
+		GROUP Choices
+			ELEMENT Off
+			Value	0
+			ELEMENT END
+			ELEMENT On
+			Value	1
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+
+		ELEMENT MusicVol
+		Title		MUSIC VOLUME
+		Type		NumericChoice
+		Low			0
+		High		9
+		Step		1
+		Action		SET_MUSIC_VOLUME
+		ELEMENT END
+
+		ELEMENT Skies
+		Title		SKIES
+		Type		MultipleChoice
+		Action		SET_SKYBOX
+		GROUP Choices
+			ELEMENT None
+			Value	NONE
+			ELEMENT END
+			ELEMENT Simple
+			Value	SIMPLE
+			ELEMENT END
+			ELEMENT Fancy
+			Value	FANCY
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+
+		ELEMENT VideoDepth
+		Title		VIDEO DEPTH
+		Type		MultipleChoice
+		Action		SET_VIDEO_DEPTH
+		GROUP Choices
+			ELEMENT 16
+			Value	16 BIT
+			ELEMENT END
+			ELEMENT 32
+			Value	32 BIT
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+
+		ELEMENT Resolution
+		Title		RESOLUTION
+		Type		MultipleChoice
+		Action		SET_RESOLUTION
+		GROUP Choices
+			ELEMENT 640
+			Value	640x480
+			ELEMENT END
+			ELEMENT 800
+			Value	800x600
+			ELEMENT END
+			ELEMENT 1024
+			Value	1024x768
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+
+		ELEMENT Fullscreen
+		Type		MultipleChoice
+		Action		SET_FULLSCREEN
+		GROUP Choices
+			ELEMENT Fullscreen
+			Value	FULLSCREEN
+			ELEMENT END
+			ELEMENT Windowed
+			Value	WINDOWED
+			ELEMENT END
+		GROUP END
+		ELEMENT END
+
+		ELEMENT	Reset
+		Title		RESTORE DEFAULTS
+		Type		ConfirmDialog
+		Query		RESET ALL OPTIONS|nTO DEFAULT VALUES:|nARE YOU SURE?
+		Action		RESET_DEFAULT_OPTIONS
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+GROUP END

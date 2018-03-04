@@ -1,0 +1,30 @@
+# A wacky skybox I'm a-tweakin'.
+
+
+NoSkyColor			0x00000000
+SimpleSkyZenithColorTop		0x000000FF
+SimpleSkyHorizonColorTop	0x00000000
+SimpleSkyHorizonColorBot	0x00000000
+SImpleSkyZenithColorBot		0x000000FF
+
+GROUP SkyLevels
+ELEMENT Clouds
+	SkyTextureBot		purple-clouds01.bmp
+	SkyTransparencyBot	transp-purple-clouds01.bmp
+	SkyTextureTop		purple-clouds01.bmp
+	SkyTransparencyTop	transp-purple-clouds01.bmp
+	SkyMoveFraction		.03
+	SkyRotateSpeed		.00002
+ELEMENT END
+ELEMENT Grid
+	SkyTextureTop		VR-sky01.bmp
+	SkyTextureBot		VR-sky01.bmp
+	SkyMoveFraction		.1
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00799CAA
+	SkyZenithColorTop	0x00FFFFFF
+	SkyHorizonColorBot	0x00799CAA
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

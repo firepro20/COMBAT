@@ -1,0 +1,40 @@
+# Ending cinematic sky
+
+LightAngle		90
+LightElevation	35
+LightColor		0x00CCCCDD
+LightAmbient	0x00996666
+
+UseFog			True
+FogStart		100
+FogEnd			450
+FogColor		0x00996666
+
+NoSkyColor			0x00CCAA80
+SimpleSkyZenithColorTop		0x00CCAA80
+SimpleSkyHorizonColorTop	0x00938080
+SimpleSkyHorizonColorBot	0x00938080
+SImpleSkyZenithColorBot		0x00CCaa80
+
+GROUP SkyLevels
+ELEMENT Area3Sky
+	SkyTextureTop		nebula.bmp
+	SkyHeightTop		40.5
+	SkyTextureBot		nebula.bmp
+	SkyHeightBot		40.5
+ELEMENT END
+ELEMENT Area2Sky
+	SkyTextureTop		BlueClouds01.bmp
+	SkyHeightTop		40.5
+	SkyTextureBot		BlueClouds01.bmp
+	SkyHeightBot		40.5
+ELEMENT END
+ELEMENT Area1Sky
+	SkyTextureTop		IrishSkyDusk02g1.bmp
+	SkyHeightTop		40.5
+	SkyTextureBot		IrishSkyDusk02g1.bmp
+	SkyHeightBot		40.5
+	SkyRotateY			271.5
+	SkyRotateZ			7
+ELEMENT END
+GROUP END

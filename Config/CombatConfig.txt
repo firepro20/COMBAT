@@ -1,0 +1,53 @@
+#
+# Configuration File for Combat
+#
+
+# Options adjustable by the in-game menus
+INCLUDE CombatOptions.txt
+# Control configuration
+INCLUDE controls.txt
+  
+# Networking
+# Enable networking at all?
+Netplay		True
+# Port to use
+Port		5088
+
+# Font resource data
+GROUP Fonts
+	ELEMENT	Interface
+    BitmapName		Cowbat16.bmp
+    CharWidth		16
+    CharHeight		16
+	CharsPerLine	16
+	Leading			0                        
+	Spacing			0
+	ELEMENT END
+	ELEMENT Console
+	BitmapName		Hofstadter8.bmp
+	CharWidth		8
+	CharHeight		8
+	CharsPerLine	16
+	Leading			0
+	Spacing			2
+	ELEMENT END
+GROUP END
+
+# Sound resource data
+INCLUDE CombatSounds.txt
+
+# High score
+INCLUDE score.txt
+
+# Secrets found
+INCLUDE secrets.txt
+
+# Starting level
+StartLevel	start.lvl
+
+# Other starting things
+SkipIntros	False
+SkipMenus	False
+StartClient	False
+StartServer	False
+ServerAddress Undefined

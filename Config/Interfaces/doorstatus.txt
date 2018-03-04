@@ -1,0 +1,32 @@
+# This shows the number of items needed to open a door.
+GROUP Interface
+	ELEMENT 	DoorStatus
+	Type		Dummy
+		GROUP Children
+		ELEMENT		Target
+		Type		Model
+		XPosition	-28
+		YPosition	-20
+		Width		64
+		Height		56
+		Scale		.04
+		ELEMENT END
+
+#		ELEMENT		Fulge
+#	   	Type		Sprite
+#  		Flags		IFACE_BLEND_NORMAL
+#   	Texture		target.bmp
+#	   	XPosition	-4
+#    	YPosition	-8
+#		ELEMENT END
+
+    	ELEMENT 	Info
+    	Type 		Text
+    	MaxLength	6
+    	XPosition	32
+    	YPosition	0
+    	Font		Interface
+    	ELEMENT END
+		GROUP END
+	ELEMENT END
+GROUP END

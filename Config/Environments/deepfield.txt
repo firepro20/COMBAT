@@ -1,0 +1,38 @@
+# More space junk.
+
+LightAngle		0
+LightElevation	45
+LightColor		0x79D8E0
+LightAmbient	0x5A5FBA
+
+UseFog			True
+FogStart		100
+FogEnd			650
+FogColor		0x00000000
+NoSkyColor			0x002B2B2B
+SimpleSkyZenithColorTop		0x002B2B2B
+SimpleSkyHorizonColorTop	0x00161616
+SimpleSkyHorizonColorBot	0x00161616
+SImpleSkyZenithColorBot		0x002B2B2B
+
+GROUP SkyLevels
+ELEMENT Nebula
+	SkyMoveFraction		0.003
+ 	GROUP Bitmaps
+ 	ELEMENT Nebula
+ 		BitmapFile		nebula.tga
+ 		BitmapAngle		270
+ 		BitmapElev		-29
+ 		BitmapSize		25.5f
+ 		BitmapDims		256
+ 	ELEMENT END
+ 	GROUP END
+ELEMENT END
+ELEMENT Background
+	SkyTextureTop		abell.bmp
+	SkyTextureBot		abell.bmp
+	SkyHeightTop		75.0f
+	SkyHeightBot		75.0f
+	SkyMoveFraction		0
+ELEMENT END
+GROUP END

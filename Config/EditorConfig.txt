@@ -1,0 +1,32 @@
+#
+# Configuration File for Combat Editor
+#
+
+GROUP Options
+	Skybox FANCY
+GROUP END
+
+# Editor window positions
+INCLUDE windowpositions.txt
+
+# Font information
+GROUP Fonts
+	ELEMENT	Interface
+    BitmapName		Cowbat16.bmp
+    CharWidth		16
+    CharHeight		16
+	CharsPerLine	16
+	Leading			0
+	Spacing			0
+	ELEMENT END
+	ELEMENT Console
+	BitmapName		Hofstadter8.bmp
+	CharWidth		8
+	CharHeight		8
+	CharsPerLine	16
+	Leading			0
+	Spacing			2
+	ELEMENT END
+GROUP END
+
+

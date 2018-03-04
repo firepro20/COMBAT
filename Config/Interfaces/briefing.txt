@@ -1,0 +1,11 @@
+GROUP Interface
+	ELEMENT		Briefing
+	Type		Text
+	Flags		IFACE_BLEND_ALPHAINV
+	MaxLength	1024
+	Color		0x00FFFFFF
+	Font		Interface
+	XPosition	120
+	YPosition	100
+	ELEMENT END
+GROUP END

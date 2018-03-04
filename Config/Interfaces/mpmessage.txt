@@ -1,0 +1,28 @@
+GROUP Interface
+	ELEMENT 	ScoreDisplay
+	Type		Dummy
+    	GROUP Children
+    	ELEMENT 	Timer
+    	Type		Text
+    	Color		0x00FFFFFF
+    	MaxLength	32
+    	Flags		IFACE_BLEND_ALPHA
+    	Text		00.00
+    	Font		Interface
+    	Scale		2.0
+    	YPosition	100
+    	ELEMENT END
+    
+    	ELEMENT		Message
+    	Type		Text
+    	Flags		IFACE_BLEND_ALPHA
+    	MaxLength	1024
+    	Color		0x00FFFFFF
+    	Font		Interface
+    	XPosition	10
+    	YPosition	580
+    	ELEMENT END
+		GROUP END
+	ELEMENT END
+GROUP END
+

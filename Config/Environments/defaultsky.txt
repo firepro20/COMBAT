@@ -1,0 +1,8 @@
+# Object test.
+
+LightAngle		0
+LightElevation	45
+LightColor		0x00FFFFFF
+LightAmbient	0x00444444
+
+UseFog			False

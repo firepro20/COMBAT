@@ -1,0 +1,1788 @@
+#
+# Tileset config
+
+Name			Start
+ModelDirectory		STS
+TextureDirectory	STS
+TileSize		1600
+
+DoorModel			t_doorandfloor.amo
+DoorHeight			1000
+ElevatorModel		t_elevator.amo
+PlayerStartModel	t_continuepoint.amo
+PlayerStartColor	0x0022FF22
+
+GROUP TabNames
+	ELEMENT			Special
+	Name			Special
+	ID			0
+	ELEMENT END
+
+	ELEMENT			Floors
+	Name			Floor
+	ID			100
+	ELEMENT END
+
+	ELEMENT			Walls
+	Name			Wall
+	ID			200
+	ELEMENT END
+
+	ELEMENT			Bridges
+	Name			Bridge
+	ID			300
+	ELEMENT END
+
+	ELEMENT			Ramps
+	Name			Ramp
+	ID			400
+	ELEMENT END
+
+	ELEMENT			Ornamental
+	Name			Orn
+	ID			500
+	ELEMENT END
+
+	ELEMENT			Dynamic
+	Name			Dynamic
+	ID			600
+	ELEMENT END
+
+	ELEMENT			Edges
+	Name			Edge
+	ID			700
+	ELEMENT END
+
+	ELEMENT			Guardrails
+	Name			Rail
+	ID			800
+	ELEMENT END
+
+	ELEMENT			Sidewalls
+	Name			HiFlr
+	ID			900
+	ELEMENT END
+
+	ELEMENT			GuardSidewalls
+	Name			HiFlrGrd
+	ID			1000
+	ELEMENT END
+
+	ELEMENT			3x3
+	Name			3x3
+	ID			1100
+	ELEMENT END
+
+	ELEMENT			5x5
+	Name			5x5
+	ID			1200
+	ELEMENT END
+
+	ELEMENT			Mega
+	Name			Huge
+	ID			1300
+	ELEMENT END
+
+	ELEMENT			Stacked
+	Name			Stacked
+	ID			1400
+	ELEMENT END
+GROUP END
+
+
+######### special 0-99 #########
+	
+GROUP Tiles
+	ELEMENT			Empty
+	ID			0
+	ELEMENT END
+
+
+######### floors 100-199 #########
+
+	ELEMENT			Floor-01
+	ID			100
+	File			t_floor_01.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			Floor-02
+	ID			101
+	File			t_floor_02.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			Floor-03
+	ID			102
+	File			t_floor_03.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			Floor-04
+	ID			103
+	File			t_floor_04.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			FlrFlare
+	ID			104
+	File			t_floorarrow_02.amo
+	Floor			0
+	ELEMENT END
+	
+	ELEMENT			FlrArrow
+	ID			105
+	File			t_floorarrow_01.amo
+	Floor			0
+	ELEMENT END
+
+######### walls 200-299 #########
+
+	ELEMENT			Corner-01
+	ID			200
+	File			t_corner_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Corner-02
+	ID			201
+	File			t_corner_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			CrossJunct
+	ID			202
+	File			t_cross_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Endcap-01
+	ID			203
+	File			t_endcap_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+	
+	ELEMENT			Endcap-02
+	ID			204
+	File			t_endcap_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Endcap-03
+	ID			205
+	File			t_endcap_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			TJunction-01
+	ID			206
+	File			t_tjunct_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			TJunction-02
+	ID			207
+	File			t_tjunct_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			TJunction-03
+	ID			208
+	File			t_tjunct_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Tower-01
+	ID			209
+	File			t_tower_01.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			Tower-02
+	ID			210
+	File			t_tower_02.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			Wall-01
+	ID			211
+	File			t_wall_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-02
+	ID			212
+	File			t_wall_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-03
+	ID			213
+	File			t_wall_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-04
+	ID			214
+	File			t_wall_04.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-05
+	ID			215
+	File			t_wall_05.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-06
+	ID			216
+	File			t_wall_06.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Arch-01
+	ID			217
+	File			t_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Arch-02
+	ID			218
+	File			t_arch_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT		        Arch-03
+	ID			219
+	File			t_arch_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			EndArch
+	ID			220
+	File			t_endcap_a_01.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			ShortArch
+	ID			221
+	File			t_arch_short.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			MidArch
+	ID			222
+	File			t_arch_middle.AMO
+	Floor			0
+	ELEMENT END
+
+
+######### bridges 300-399 #########
+
+	ELEMENT			Lv1_2edge
+	ID			300
+	File			t_bridge1_01.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			Lv1_1edge
+	ID			301
+	File			t_bridge1_02.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			Lv2_2edge
+	ID			302
+	File			t_bridge2_01.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			Lv2_1edge
+	ID				303
+	File			t_bridge2_02.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			Lv3_2edge
+	ID				304
+	File			t_bridge3_01.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			Lv3_1edge
+	ID				305
+	File			t_bridge3_02.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			NoFloor_1edge
+	ID				306
+	File			t_bridge_02.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			NoFloor_2edge
+	ID				307
+	File			t_bridge_01.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			NoFloor_3edge
+	ID			308
+	File			t_bridge_03.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			NoFloor_4edge
+	ID			309
+	File			t_bridge_04.AMO
+	Floor			0
+	ELEMENT END
+
+
+######### ramps 400-499 #########
+
+######### ornamental 500-599 #########
+
+	ELEMENT			Pit-01
+	ID			500
+	File			t_pit_01.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	Block2			0
+	ELEMENT END
+
+
+	ELEMENT			Pit-02
+	ID			501
+	File			t_pit_02.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	Block2			0
+	ELEMENT END
+
+	ELEMENT			VoidPost
+	ID			502
+	File			t_void_01.AMO
+	Block0			-2
+	Block1			-1
+	Block2			0
+	ELEMENT END
+
+	ELEMENT			BottomTile
+        ##best used as part of a stackable object
+	ID			503
+	File			t_bottom_3x3.AMO
+	ELEMENT END
+
+	ELEMENT			Doorframe1
+	ID			504
+	File			t_doorendcap_01.AMO
+	ELEMENT END
+
+	ELEMENT			Doorframe2
+	ID			505
+	File			t_doorendcap_02.AMO
+	ELEMENT END
+
+
+######### dynamic 600-699 #########
+
+	ELEMENT			PUpBase
+	ID			600
+	File			t_floor_05.amo
+	Floor			0
+	ELEMENT END	
+
+
+	ELEMENT			TurretBase
+	ID			601
+	File			t_voidturret_01.AMO
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			DoorEnd1
+	ID			602
+	File			t_doorendcap_01.AMO
+	ELEMENT END
+
+	ELEMENT			DoorEnd2
+	ID			603
+	File			t_doorendcap_02.AMO
+	ELEMENT END
+
+######### edges 700-799 #########
+
+
+	ELEMENT			Edge-01
+	ID			700
+	File			t_edge_01.amo
+	ELEMENT END
+
+	ELEMENT			Edge-02
+	ID			701
+	File			t_edge_02.amo
+	ELEMENT END
+
+	ELEMENT			Edge-03
+	ID			702
+	File			t_edge_03.amo
+	ELEMENT END
+
+	ELEMENT			Edge-04
+	ID			703
+	File			t_edge_04.amo
+	ELEMENT END
+
+	ELEMENT			Edge-05
+	ID			704
+	File			t_edge_05.amo
+	ELEMENT END
+
+	ELEMENT			Edge-06
+	ID			705
+	File			t_edge_06.amo
+	Block			-1
+	ELEMENT END
+
+	ELEMENT			Edge-07
+	ID			706
+	File			t_edge_07.amo
+	Block			-1
+	ELEMENT END
+
+
+######### guardrails 800-899 #########
+
+	ELEMENT			Rail1
+	ID				800
+	File			t_rail_01.AMO
+	EastRail		0
+	ELEMENT END
+
+	ELEMENT			Rail2
+	ID				801
+	File			t_rail_02.AMO
+	EastRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			Rail3
+	ID				802
+	File			t_rail_03.AMO
+	ELEMENT END
+
+	ELEMENT			Rail4
+	ID				803
+	File			t_rail_04.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			Rail5
+	ID				804
+	File			t_rail_05.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			Rail6
+	ID			805
+	File			t_rail_06.AMO
+	EastRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			Rail7
+	ID			806
+	File			t_rail_07.AMO
+	EastRail		0
+	NorthRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			RailEnd1
+	ID			808
+	File			t_railend_01.AMO
+	ELEMENT END
+
+	ELEMENT			RailEnd2
+	ID			809
+	File			t_railend_02.AMO
+	ELEMENT END
+
+	ELEMENT			RailDiagWall1
+	ID			850
+	File			t_floor3_diagonalrail_01.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			RailDiagWall2
+	ID			851
+	File			t_floor3_diagonalrail_02.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+######### sidewalls 900-999 #########
+
+	ELEMENT			Lv1-1edge
+	ID			900
+	File			t_floor2_01.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-2edge
+	ID			901
+	File			t_floor2_02.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-3edge
+	ID			902
+	File			t_floor2_03.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-4edge
+	ID			903
+	File			t_floor2_04.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-opedge
+	ID			904
+	File			t_floor2_05.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-1edge
+	ID			905
+	File			t_floor3_01.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-2edge
+	ID			906
+	File			t_floor3_02.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-3edge
+	ID			907
+	File			t_floor3_03.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-4edge
+	ID			908
+	File			t_floor3_04.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-opedge
+	ID			909
+	File			t_floor3_05.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2_diag1
+	ID			950
+	File			t_floor3_diagonal_01.amo
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2_diag2
+	ID			951
+	File			t_floor3_diagonal_02.amo
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+
+######### guardSideWalls 1000-1099 #########
+
+
+######### 3x3 1100-1199 #########
+
+
+######### Stacked 1400-1499 #########
+
+
+
+
+######### floors 100-199 #########
+
+	ELEMENT			GFloor-01
+	ID			130
+	File			g_floor_01.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			GFloor-02
+	ID			131
+	File			g_floor_02.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			GFloor-03
+	ID			132
+	File			g_floor_03.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			GFloor-04
+	ID			133
+	File			g_floor_04.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			GFlrFlare
+	ID			134
+	File			g_floorarrow_02.amo
+	Floor			0
+	ELEMENT END
+	
+	ELEMENT			GFlrArrow
+	ID			135
+	File			g_floorarrow_01.amo
+	Floor			0
+	ELEMENT END
+
+######### walls 200-299 #########
+
+	ELEMENT			GCorner-01
+	ID			230
+	File			g_corner_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GCorner-02
+	ID			231
+	File			g_corner_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GCrossJunct
+	ID			232
+	File			g_cross_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GEndcap-01
+	ID			233
+	File			g_endcap_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+	
+	ELEMENT			GEndcap-02
+	ID			234
+	File			g_endcap_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GEndcap-03
+	ID			235
+	File			g_endcap_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GTJunction-01
+	ID			236
+	File			g_tjunct_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GTJunction-02
+	ID			237
+	File			g_tjunct_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GTJunction-03
+	ID			238
+	File			g_tjunct_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GTower-01
+	ID			239
+	File			g_tower_01.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			GTower-02
+	ID			240
+	File			g_tower_02.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			GWall-01
+	ID			241
+	File			g_wall_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GWall-02
+	ID			242
+	File			g_wall_02.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			GWall-03
+	ID			243
+	File			g_wall_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GWall-04
+	ID			244
+	File			g_wall_04.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GWall-05
+	ID			245
+	File			g_wall_05.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GWall-06
+	ID			246
+	File			g_wall_06.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GArch-01
+	ID			247
+	File			g_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GArch-02
+	ID			248
+	File			g_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT		GArch-03
+	ID			249
+	File			g_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GEndArch
+	ID			250
+	File			g_endcap_a_01.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GShortArch
+	ID			251
+	File			g_arch_short.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			GMidArch
+	ID			252
+	File			g_arch_middle.AMO
+	Floor			0
+	ELEMENT END
+
+######### bridges 300-399 #########
+
+
+	ELEMENT			GLv1_2edge
+	ID			330
+	File			g_bridge1_01.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			GLv1_1edge
+	ID			331
+	File			g_bridge1_02.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			GLv2_2edge
+	ID			332
+	File			g_bridge2_01.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			GLv2_1edge
+	ID			333
+	File			g_bridge2_02.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			GLv3_2edge
+	ID			334
+	File			g_bridge3_01.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			GLv3_1edge
+	ID			335
+	File			g_bridge3_02.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			GNoFloor_1edge
+	ID			336
+	File			g_bridge_02.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			GNoFloor_2edge
+	ID			337
+	File			g_bridge_01.AMO
+	Floor			0
+	ELEMENT END
+	
+	ELEMENT			GNoFloor_3edge
+	ID			338
+	File			g_bridge_03.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			GNoFloor_4edge
+	ID			339
+	File			g_bridge_04.AMO
+	Floor			0
+	ELEMENT END
+	
+
+######### ramps 400-499 #########
+
+######### ornamental 500-599 #########
+
+	ELEMENT			GPit-01
+	ID			530
+	File			g_pit_01.amo
+	Floor			0
+	Block0			-1
+	Block1			-2
+	ELEMENT END
+
+
+	ELEMENT			GPit-02
+	ID			531
+	File			g_pit_02.amo
+	Floor			0
+	Block0			0
+	Block1			-1
+	Block2			-2
+	ELEMENT END
+
+	ELEMENT			GVoidPost
+	ID			532
+	File			g_void_01.AMO
+	Block0			0
+	Block1			-1
+	Block2			-2
+	Block3			-3
+	ELEMENT END
+
+######### dynamic 600-699 #########
+
+	ELEMENT			GPUpBase
+	ID			630
+	File			g_floor_05.amo
+	Floor			0
+	ELEMENT END	
+
+
+	ELEMENT			GTurretBase
+	ID			631
+	File			g_voidturret_01.AMO
+	Block1			-1
+	Block2			-2
+	Block3			-3
+	ELEMENT END
+
+	ELEMENT			GDoorEnd1
+	ID			632
+	File			g_doorendcap_01.AMO
+	ELEMENT END
+
+	ELEMENT			GDoorEnd2
+	ID			633
+	File			g_doorendcap_02.AMO
+	ELEMENT END
+
+######### edges 700-799 #########
+
+
+	ELEMENT			GEdge-01
+	ID			730
+	File			g_edge_01.amo
+	ELEMENT END
+
+	ELEMENT			GEdge-02
+	ID			731
+	File			g_edge_02.amo
+	ELEMENT END
+
+	ELEMENT			GEdge-03
+	ID			732
+	File			g_edge_03.amo
+	ELEMENT END
+
+	ELEMENT			GEdge-04
+	ID			733
+	File			g_edge_04.amo
+	ELEMENT END
+
+	ELEMENT			GEdge-05
+	ID			734
+	File			g_edge_05.amo
+	ELEMENT END
+
+	ELEMENT			GEdge-06
+	ID			735
+	File			g_edge_06.amo
+	ELEMENT END
+
+	ELEMENT			GEdge-07
+	ID			736
+	File			g_edge_07.amo
+	ELEMENT END
+
+######### guardrails 800-899 #########
+
+	ELEMENT			GRail1
+	ID			830
+	File			g_rail_01.AMO
+	EastRail		0
+	ELEMENT END
+
+	ELEMENT			GRail2
+	ID			831
+	File			g_rail_02.AMO
+	EastRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			GRail3
+	ID			832
+	File			g_rail_03.AMO
+	ELEMENT END
+
+	ELEMENT			GRail4
+	ID			833
+	File			g_rail_04.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			GRail5
+	ID			834
+	File			g_rail_05.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			GRail6
+	ID			835
+	File			g_rail_06.AMO
+	EastRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			GRail7
+	ID			836
+	File			g_rail_07.AMO
+	EastRail		0
+	NorthRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			GRailEnd1
+	ID			838
+	File			g_railend_01.AMO
+	Collision		IMPASSIBLE
+	ELEMENT END
+
+	ELEMENT			GRailEnd2
+	ID			839
+	File			g_railend_02.AMO
+	Collision		IMPASSIBLE
+	ELEMENT END
+
+	ELEMENT			GRailDiagWall1
+	ID			840
+	File			g_floor3_diagonalrail_01.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GRailDiagWall2
+	ID			841
+	File			g_floor3_diagonalrail_02.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+######### sidewalls 900-999 #########
+
+	ELEMENT			GLv1-1edge
+	ID			930
+	File			g_floor2_01.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			GLv1-2edge
+	ID			931
+	File			g_floor2_02.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			GLv1-3edge
+	ID			932
+	File			g_floor2_03.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			GLv1-4edge
+	ID			933
+	File			g_floor2_04.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			GLv1-opedge
+	ID			934
+	File			g_floor2_05.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			GLv2-1edge
+	ID			935
+	File			g_floor3_01.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GLv2-2edge
+	ID			936
+	File			g_floor3_02.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GLv2-3edge
+	ID			937
+	File			g_floor3_03.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GLv2-4edge
+	ID			938
+	File			g_floor3_04.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GLv2-opedge
+	ID			939
+	File			g_floor3_05.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GLv2_diag1
+	ID			940
+	File			g_floor3_diagonal_01.amo
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			GLv2_diag2
+	ID			941
+	File			g_floor3_diagonal_02.amo
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+######### floors 100-199 #########
+
+	ELEMENT			VFloor-01
+	ID			170
+	File			v_floor_01.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VFloor-02
+	ID			171
+	File			v_floor_02.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VFloor-03
+	ID			172
+	File			v_floor_03.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VFloor-04
+	ID			173
+	File			v_floor_04.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VFlrFlare
+	ID			174
+	File			v_floorarrow_02.amo
+	Floor			0
+	ELEMENT END
+	
+	ELEMENT			VFlrArrow
+	ID			175
+	File			v_floorarrow_01.amo
+	Floor			0
+	ELEMENT END
+
+######### walls 200-299 #########
+
+	ELEMENT			VCorner-01
+	ID			270
+	File			v_corner_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VCrossJunct
+	ID			272
+	File			v_cross_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VEndcap-01
+	ID			273
+	File			v_endcap_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+	
+	ELEMENT			VEndcap-02
+	ID			274
+	File			v_endcap_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VEndcap-03
+	ID			275
+	File			v_endcap_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VTJunction-01
+	ID			276
+	File			v_tjunct_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VTower-01
+	ID			279
+	File			v_tower_01.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			VWall-01
+	ID			281
+	File			v_wall_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VWall-02
+	ID			282
+	File			v_wall_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VWall-03
+	ID			283
+	File			v_wall_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VWall-04
+	ID			284
+	File			v_wall_04.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VWall-05
+	ID			285
+	File			v_wall_05.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VWall-06
+	ID			286
+	File			v_wall_06.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VEndArch
+	ID			290
+	File			v_endcap_a_01.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VShortArch
+	ID			291
+	File			v_arch_short.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			VMidArch
+	ID			292
+	File			v_arch_middle.AMO
+	Floor			0
+	ELEMENT END
+
+
+######### bridges 300-399 #########
+
+	ELEMENT			VLv1_2edge
+	ID			370
+	File			v_bridge1_01.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			VLv1_1edge
+	ID			371
+	File			v_bridge1_02.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			VLv2_2edge
+	ID			372
+	File			v_bridge2_01.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			VLv2_1edge
+	ID				373
+	File			v_bridge2_02.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			VLv3_2edge
+	ID				374
+	File			v_bridge3_01.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			VLv3_1edge
+	ID				375
+	File			v_bridge3_02.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			VNoFloor_1edge
+	ID				376
+	File			v_bridge_02.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VNoFloor_2edge
+	ID				377
+	File			v_bridge_01.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VNoFloor_3edge
+	ID			378
+	File			v_bridge_03.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			VNoFloor_4edge
+	ID			379
+	File			v_bridge_04.AMO
+	Floor			0
+	ELEMENT END
+
+
+######### ramps 400-499 #########
+
+######### ornamental 500-599 #########
+
+	ELEMENT			VPit-01
+	ID			570
+	File			v_pit_01.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+
+	ELEMENT			VPit-02
+	ID			571
+	File			v_pit_02.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	Block2			0
+	ELEMENT END
+
+	ELEMENT			VVoidPost
+	ID			572
+	File			v_void_01.AMO
+	Block0			-2
+	Block1			-1
+	Block2			0
+	ELEMENT END
+
+######### dynamic 600-699 #########
+
+	ELEMENT			VPUpBase
+	ID			670
+	File			v_floor_05.amo
+	Floor			0
+	ELEMENT END	
+
+
+	ELEMENT			VTurretBase
+	ID			671
+	File			v_voidturret_01.AMO
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			VDoorEnd1
+	ID			672
+	File			v_doorendcap_01.AMO
+	ELEMENT END
+
+	ELEMENT			VDoorEnd2
+	ID			673
+	File			v_doorendcap_02.AMO
+	ELEMENT END
+
+######### edges 700-799 #########
+
+
+	ELEMENT			VEdge-01
+	ID			770
+	File			v_edge_01.amo
+	ELEMENT END
+
+	ELEMENT			VEdge-02
+	ID			771
+	File			v_edge_02.amo
+	ELEMENT END
+
+	ELEMENT			VEdge-03
+	ID			772
+	File			v_edge_03.amo
+	ELEMENT END
+
+	ELEMENT			VEdge-04
+	ID			773
+	File			v_edge_04.amo
+	ELEMENT END
+
+	ELEMENT			VEdge-05
+	ID			774
+	File			v_edge_05.amo
+	ELEMENT END
+
+	ELEMENT			VEdge-06
+	ID			775
+	File			v_edge_06.amo
+	Block			-1
+	ELEMENT END
+
+	ELEMENT			VEdge-07
+	ID			776
+	File			v_edge_07.amo
+	Block			-1
+	ELEMENT END
+
+
+######### guardrails 800-899 #########
+
+	ELEMENT			VRail1
+	ID				870
+	File			v_rail_01.AMO
+	EastRail		0
+	ELEMENT END
+
+	ELEMENT			VRail2
+	ID				871
+	File			v_rail_02.AMO
+	EastRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			VRail3
+	ID				872
+	File			v_rail_03.AMO
+	ELEMENT END
+
+	ELEMENT			VRail4
+	ID				873
+	File			v_rail_04.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			VRail5
+	ID				874
+	File			v_rail_05.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			VRail6
+	ID			875
+	File			v_rail_06.AMO
+	EastRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			VRail7
+	ID			876
+	File			v_rail_07.AMO
+	EastRail		0
+	NorthRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			VRailEnd1
+	ID			878
+	File			v_railend_01.AMO
+	ELEMENT END
+
+	ELEMENT			VRailEnd2
+	ID			879
+	File			v_railend_02.AMO
+	ELEMENT END
+
+	ELEMENT			VRailCorn2
+	ID				880
+	File			v_floor2_02rail.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			VRailCorn3
+	ID				881
+	File			v_floor3_02rail.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+
+######### sidewalls 900-999 #########
+
+	ELEMENT			VLv1-1edge
+	ID			970
+	File			v_floor2_01.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			VLv1-2edge
+	ID			971
+	File			v_floor2_02.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			VLv1-3edge
+	ID			972
+	File			v_floor2_03.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			VLv1-4edge
+	ID			973
+	File			v_floor2_04.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			VLv1-opedge
+	ID			974
+	File			v_floor2_05.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			VLv2-1edge
+	ID			975
+	File			v_floor3_01.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			VLv2-2edge
+	ID			976
+	File			v_floor3_02.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			VLv2-3edge
+	ID			977
+	File			v_floor3_03.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			VLv2-4edge
+	ID			978
+	File			v_floor3_04.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			VLv2-opedge
+	ID			979
+	File			v_floor3_05.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+######### guardSideWalls 1000-1099 #########
+
+
+	ELEMENT			VTwoCorners
+	ID			1406
+	GROUP Models
+		ELEMENT 	C1
+		File		v_rail_03.amo
+		Rotation	0
+		ELEMENT END
+
+		ELEMENT 	C2
+		File		v_rail_03.amo
+		Rotation	90
+		ELEMENT END
+	GROUP END
+	ELEMENT END
+
+
+GROUP END
+
+

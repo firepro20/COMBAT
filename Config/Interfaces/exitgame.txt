@@ -1,0 +1,49 @@
+# This displays the end of game dialog.
+GROUP Interface
+	ELEMENT		ShadedBackground
+	Type		Box
+	Flags		IFACE_BLEND_ALPHA,IFACE_DRAWBORDER,IFACE_FILL
+	Color		0xCC222222
+	BorderColor	0x00FFFFFF
+	Width		440
+	Height		100
+	GROUP Children
+    	ELEMENT 	Dialog
+    	Type		Dummy
+        	GROUP Children
+        	ELEMENT 	Text
+         	Type 		Text
+        	MaxLength	256
+        	Font		Interface
+    		Scale		1.5
+           	XPosition	15
+        	YPosition	12
+    		Text		END CURRENT GAME?
+        	ELEMENT END
+        
+        	ELEMENT 	OK
+         	Type 		Text
+        	MaxLength	4
+        	Font		Interface
+    		Scale		1.5
+           	XPosition	15
+        	YPosition	64
+    		Text		OK
+        	ELEMENT END
+    
+        	ELEMENT 	NO
+         	Type 		Text
+        	MaxLength	4
+        	Font		Interface
+    		Scale		1.5
+           	XPosition	374
+        	YPosition	64
+    		Text		NO
+        	ELEMENT END
+    		GROUP END
+    	ELEMENT END
+	GROUP END
+	ELEMENT END
+GROUP END
+
+    

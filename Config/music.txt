@@ -1,0 +1,62 @@
+# Music information
+GROUP Music
+	ELEMENT		TutorialTheme
+	EditorTag	TutorialTheme
+	ELEMENT END
+
+	ELEMENT		PrePostLevelTheme
+	EditorTag	PrePostLevelTheme
+	ELEMENT END
+
+	ELEMENT		TronTheme
+	EditorTag	TronTheme
+	ELEMENT END
+
+	ELEMENT		GernsbackTheme
+	EditorTag	GernsbackTheme
+	ELEMENT END
+
+	ELEMENT		VRTheme
+	EditorTag	VRTheme
+	ELEMENT END
+
+	ELEMENT		BuzzBombMiniboss
+	EditorTag	BuzzBombMiniboss
+	ELEMENT END
+
+	ELEMENT		SpinneretMiniboss
+	EditorTag	SpinneretMiniboss
+	ELEMENT END
+
+	ELEMENT		PatrollersMiniboss
+	EditorTag	PatrollersMiniboss
+	ELEMENT END
+
+	ELEMENT		GunshipBoss
+	EditorTag	GunshipBoss
+	ELEMENT END
+
+	ELEMENT		CarrierBoss
+	EditorTag	CarrierBoss
+	ELEMENT END
+
+	ELEMENT		SaucerBoss
+	EditorTag	SaucerBoss
+	ELEMENT END
+
+	ELEMENT		LastBoss
+	EditorTag	LastBoss
+	ELEMENT END
+
+	ELEMENT		TronSecretLevelTheme
+	EditorTag	TronSecretLevelTheme
+	ELEMENT END
+
+	ELEMENT		GernsbackSecretLevelTheme
+	EditorTag	GernsbackSecretLevelTheme
+	ELEMENT END
+
+	ELEMENT		VRSecretLevelTheme
+	EditorTag	VRSecretLevelTheme
+	ELEMENT END
+GROUP END

@@ -1,0 +1,87 @@
+# Darth Tank's boss config
+
+# boss ID
+ID				5
+# displayed version
+Version			1.00
+# displayed name
+Name			Darth Tank
+# model
+ModelName		e_darthtank.AMO
+# scale fac
+Scale			2.6
+# hover altitude
+Altitude		4.5
+# points awarded for defeating it
+Score			100000
+# how many goodies come out
+TreasureType	1
+TreasureCount	0
+
+TopSpeed		150
+Acceleration	75
+BrakePower		50
+TurnSpeed		1.5
+
+ScareDistance	50
+WithdrawDistance 150
+
+# hull of boss is invulnerable?
+Invulnerable		False
+# name of collision volume
+CollisionVolume		Collision
+# max collision radius
+CollisionRadius		40
+# hit points
+HitPoints			45
+
+GROUP Turrets
+	ELEMENT PlasmaTurret
+	ModelName		e_darthtankplasmagun.AMO
+	AttachPoint		attach1
+	Type			PLASMA
+	Autonomous		False
+	CollisionRadius	2.25
+	NumBarrels		1
+	StartAngle		0
+	MinAngle		-20
+	MaxAngle		70
+	SweepAttack		True
+	SweepAngle		15
+	RotationSpeed	4.1
+	ClipSize		20
+	ShotSpeed		150
+	ShotInterval	.2
+	ReloadTime		2.00
+	HitPoints		15
+	Score			1000
+	TreasureType	0
+	NoBlock			True
+	ELEMENT END
+
+	ELEMENT PercTurret
+	ModelName		e_darthtankconcussion.AMO
+	AttachPoint		attach0
+	Type			PERCUSSION
+	Autonomous		False
+	CollisionRadius	2.25
+	SweepAttack		False
+	StartAngle		0
+	MinAngle		-45
+	MaxAngle		45
+	SweepAngle		0
+	ClipSize		10
+	ShotSpeed		150
+	ShotInterval	.4
+	ReloadTime		2.00
+	NumBarrels		1
+	HitPoints		25
+	Score			800
+	TreasureType	0
+	NoBlock			True
+	ELEMENT END
+GROUP END
+
+	
+	
+	

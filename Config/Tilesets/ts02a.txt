@@ -1,0 +1,1339 @@
+#
+# Tileset config
+
+Name			gernsback
+ModelDirectory		TS02
+TextureDirectory	TS02
+TileSize		1600
+
+DoorModel			g_doorandfloor.amo
+DoorHeight			1400
+ElevatorModel		g_elevator.amo
+PlayerStartModel	g_continuepoint.amo
+PlayerStartColor	0x002222FF
+
+GROUP TabNames
+	ELEMENT			Special
+	Name			Special
+	ID			0
+	ELEMENT END
+
+	ELEMENT			Floors
+	Name			Floor
+	ID			100
+	ELEMENT END
+
+	ELEMENT			Walls
+	Name			Wall
+	ID			200
+	ELEMENT END
+
+	ELEMENT			Bridges
+	Name			Bridge
+	ID			300
+	ELEMENT END
+
+	ELEMENT			Ramps
+	Name			Ramp
+	ID			400
+	ELEMENT END
+
+	ELEMENT			Ornamental
+	Name			Orn
+	ID			500
+	ELEMENT END
+
+	ELEMENT			Dynamic
+	Name			Dynamic
+	ID			600
+	ELEMENT END
+
+	ELEMENT			Edges
+	Name			Edge
+	ID			700
+	ELEMENT END
+
+	ELEMENT			Guardrails
+	Name			Rail
+	ID			800
+	ELEMENT END
+
+	ELEMENT			Sidewalls
+	Name			HiFlr
+	ID			900
+	ELEMENT END
+
+	ELEMENT			GuardSidewalls
+	Name			HiFlrGrd
+	ID			1000
+	ELEMENT END
+
+	ELEMENT			3x3
+	Name			3x3
+	ID			1100
+	ELEMENT END
+
+	ELEMENT			5x5
+	Name			5x5
+	ID			1200
+	ELEMENT END
+
+	ELEMENT			Mega
+	Name			Huge
+	ID			1300
+	ELEMENT END
+
+	ELEMENT			Stacked
+	Name			Stacked
+	ID			1400
+	ELEMENT END
+GROUP END
+
+
+######### special 0-99 #########
+	
+GROUP Tiles
+	ELEMENT			Empty
+	ID			0
+	ELEMENT END
+
+
+######### floors 100-199 #########
+
+	ELEMENT			Floor-01
+	ID			100
+	File			g_floor_01.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			Floor-02
+	ID			101
+	File			g_floor_02.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			Floor-03
+	ID			102
+	File			g_floor_03.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			Floor-04
+	ID			103
+	File			g_floor_04.amo
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			FlrFlare
+	ID			104
+	File			g_floorarrow_02.amo
+	Floor			0
+	ELEMENT END
+	
+	ELEMENT			FlrArrow
+	ID			105
+	File			g_floorarrow_01.amo
+	Floor			0
+	ELEMENT END
+
+######### walls 200-299 #########
+
+	ELEMENT			Corner-01
+	ID			200
+	File			g_corner_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Corner-02
+	ID			201
+	File			g_corner_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			CrossJunct
+	ID			202
+	File			g_cross_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Endcap-01
+	ID			203
+	File			g_endcap_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+	
+	ELEMENT			Endcap-02
+	ID			204
+	File			g_endcap_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Endcap-03
+	ID			205
+	File			g_endcap_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			TJunction-01
+	ID			206
+	File			g_tjunct_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			TJunction-02
+	ID			207
+	File			g_tjunct_02.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			TJunction-03
+	ID			208
+	File			g_tjunct_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Tower-01
+	ID			209
+	File			g_tower_01.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			Tower-02
+	ID			210
+	File			g_tower_02.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			Wall-01
+	ID			211
+	File			g_wall_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+      ELEMENT			secretwall
+	ID			223
+	File			g_ghostwall_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-02
+	ID			212
+	File			g_wall_02.amo
+	Floor			0
+	Block0			0
+	Block1			1
+	ELEMENT END
+
+	ELEMENT			Wall-03
+	ID			213
+	File			g_wall_03.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-04
+	ID			214
+	File			g_wall_04.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-05
+	ID			215
+	File			g_wall_05.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Wall-06
+	ID			216
+	File			g_wall_06.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Arch-01
+	ID			217
+	File			g_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			Arch-02
+	ID			218
+	File			g_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT		Arch-03
+	ID			219
+	File			g_arch_01.amo
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			EndArch
+	ID			220
+	File			g_endcap_a_01.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			ShortArch
+	ID			221
+	File			g_arch_short.AMO
+	Floor			0
+	Block			0
+	ELEMENT END
+
+	ELEMENT			MidArch
+	ID			222
+	File			g_arch_middle.AMO
+	Floor			0
+	ELEMENT END
+
+######### bridges 300-399 #########
+
+
+	ELEMENT			Lv1_2edge
+	ID			300
+	File			g_bridge1_01.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			Lv1_1edge
+	ID			301
+	File			g_bridge1_02.AMO
+	Floor0			0
+	Floor1			1
+	ELEMENT END
+
+	ELEMENT			Lv2_2edge
+	ID			302
+	File			g_bridge2_01.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			Lv2_1edge
+	ID			303
+	File			g_bridge2_02.AMO
+	Floor0			0
+	Floor1			2
+	ELEMENT END
+
+	ELEMENT			Lv3_2edge
+	ID			304
+	File			g_bridge3_01.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			Lv3_1edge
+	ID			305
+	File			g_bridge3_02.AMO
+	Floor0			0
+	Floor1			3
+	ELEMENT END
+
+	ELEMENT			NoFloor_1edge
+	ID			306
+	File			g_bridge_02.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			NoFloor_2edge
+	ID			307
+	File			g_bridge_01.AMO
+	Floor			0
+	ELEMENT END
+	
+	ELEMENT			NoFloor_3edge
+	ID			308
+	File			g_bridge_03.AMO
+	Floor			0
+	ELEMENT END
+
+	ELEMENT			NoFloor_4edge
+	ID			309
+	File			g_bridge_04.AMO
+	Floor			0
+	ELEMENT END
+	
+
+######### ramps 400-499 #########
+
+######### ornamental 500-599 #########
+
+	ELEMENT			Pit-01
+	ID			500
+	File			g_pit_01.amo
+	Floor			0
+	Block0			-1
+	Block1			-2
+	ELEMENT END
+
+
+	ELEMENT			Pit-02
+	ID			501
+	File			g_pit_02.amo
+	Floor			0
+	Block0			0
+	Block1			-1
+	Block2			-2
+	ELEMENT END
+
+	ELEMENT			VoidPost
+	ID			502
+	File			g_void_01.AMO
+	Block0			0
+	Block1			-1
+	Block2			-2
+	Block3			-3
+	ELEMENT END
+
+######### dynamic 600-699 #########
+
+	ELEMENT			PUpBase
+	ID			600
+	File			g_floor_05.amo
+	Floor			0
+	ELEMENT END	
+
+
+	ELEMENT			TurretBase
+	ID			601
+	File			g_voidturret_01.AMO
+	Block1			-1
+	Block2			-2
+	Block3			-3
+	ELEMENT END
+
+	ELEMENT			DoorEnd1
+	ID			602
+	File			g_doorendcap_01.AMO
+	ELEMENT END
+
+	ELEMENT			DoorEnd2
+	ID			603
+	File			g_doorendcap_02.AMO
+	ELEMENT END
+
+######### edges 700-799 #########
+
+
+	ELEMENT			Edge-01
+	ID			700
+	File			g_edge_01.amo
+	ELEMENT END
+
+	ELEMENT			Edge-02
+	ID			701
+	File			g_edge_02.amo
+	ELEMENT END
+
+	ELEMENT			Edge-03
+	ID			702
+	File			g_edge_03.amo
+	ELEMENT END
+
+	ELEMENT			Edge-04
+	ID			703
+	File			g_edge_04.amo
+	ELEMENT END
+
+	ELEMENT			Edge-05
+	ID			704
+	File			g_edge_05.amo
+	ELEMENT END
+
+	ELEMENT			Edge-06
+	ID			705
+	File			g_edge_06.amo
+	ELEMENT END
+
+	ELEMENT			Edge-07
+	ID			706
+	File			g_edge_07.amo
+	ELEMENT END
+
+######### guardrails 800-899 #########
+
+	ELEMENT			Rail1
+	ID			800
+	File			g_rail_01.AMO
+	EastRail		0
+	ELEMENT END
+
+	ELEMENT			Rail2
+	ID			801
+	File			g_rail_02.AMO
+	EastRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			Rail3
+	ID			802
+	File			g_rail_03.AMO
+	ELEMENT END
+
+	ELEMENT			Rail4
+	ID			803
+	File			g_rail_04.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			Rail5
+	ID			804
+	File			g_rail_05.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			Rail6
+	ID			805
+	File			g_rail_06.AMO
+	EastRail		0
+	WestRail		0
+	ELEMENT END
+
+	ELEMENT			Rail7
+	ID			806
+	File			g_rail_07.AMO
+	EastRail		0
+	NorthRail		0
+	SouthRail		0
+	ELEMENT END
+
+	ELEMENT			RailEnd1
+	ID			808
+	File			g_railend_01.AMO
+	Collision		IMPASSIBLE
+	ELEMENT END
+
+	ELEMENT			RailEnd2
+	ID			809
+	File			g_railend_02.AMO
+	Collision		IMPASSIBLE
+	ELEMENT END
+
+	ELEMENT			RailDiagWall1
+	ID			850
+	File			g_floor3_diagonalrail_01.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			RailDiagWall2
+	ID			851
+	File			g_floor3_diagonalrail_02.AMO
+	NorthRail		0
+	EastRail		0
+	SouthRail		0
+	WestRail		0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+######### sidewalls 900-999 #########
+
+	ELEMENT			Lv1-1edge
+	ID			900
+	File			g_floor2_01.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-2edge
+	ID			901
+	File			g_floor2_02.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-3edge
+	ID			902
+	File			g_floor2_03.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-4edge
+	ID			903
+	File			g_floor2_04.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv1-opedge
+	ID			904
+	File			g_floor2_05.amo
+	Floor			0
+	Block0			-2
+	Block1			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-1edge
+	ID			905
+	File			g_floor3_01.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-2edge
+	ID			906
+	File			g_floor3_02.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-3edge
+	ID			907
+	File			g_floor3_03.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-4edge
+	ID			908
+	File			g_floor3_04.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2-opedge
+	ID			909
+	File			g_floor3_05.amo
+	Floor			0
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2_diag1
+	ID			950
+	File			g_floor3_diagonal_01.amo
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+	ELEMENT			Lv2_diag2
+	ID			951
+	File			g_floor3_diagonal_02.amo
+	Block0			-4
+	Block1			-3
+	Block2			-2
+	Block3			-1
+	ELEMENT END
+
+
+######### guardSideWalls 1000-1099 #########
+
+
+######### 3x3 1100-1199 #########
+
+	ELEMENT			3x3_1
+	ID			1100
+	File			g_3x3_01.AMO
+	Size			3
+	GROUP Coll0
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+	GROUP END
+	GROUP Coll1
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+	GROUP END
+	GROUP Coll2
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+	GROUP END
+	GROUP Coll3
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+		Block7	7
+		Block8	8
+	GROUP END
+	GROUP Coll4
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+		Block7	7
+		Block8	8
+	GROUP END
+	GROUP Coll5
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+		Block7	7
+	GROUP END
+	GROUP Coll6
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+	GROUP END
+	GROUP Coll7
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+	GROUP END
+	GROUP Coll8
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+		Block5	5
+		Block6	6
+	GROUP END
+
+	ELEMENT END
+
+	ELEMENT			3x3_2
+	ID			1101
+	File			g_3x3_02.AMO
+	Size			3
+	GROUP Coll0
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll1
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+	GROUP END
+	GROUP Coll2
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll3
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+	GROUP END
+	GROUP Coll4
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+	GROUP END
+	GROUP Coll5
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+	GROUP END
+	GROUP Coll6
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll7
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+		Block4	4
+	GROUP END
+	GROUP Coll8
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	ELEMENT END
+
+	ELEMENT			3x3_3
+	ID			1102
+	File			g_3x3_03.AMO
+	Size			3
+	GROUP Coll0
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll1
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll2
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll3
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll4
+		Floor0	0
+		Block0	-1
+		Block1	0
+		Block2	1
+		Block3	2
+	GROUP END
+	GROUP Coll5
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll6
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll7
+		Floor0	0
+		Block0	-1
+	GROUP END
+	GROUP Coll8
+		Floor0	0
+		Block0	-1
+	GROUP END
+	ELEMENT END
+
+	ELEMENT			3x3_4
+	ID			1103
+	File			g_3x3_04.AMO
+	Size			3
+	GROUP Coll0
+		Floor0	0
+	GROUP END
+	GROUP Coll1
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll2
+		Floor0	0
+	GROUP END
+	GROUP Coll3
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll4
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+		Block3	3
+	GROUP END
+	GROUP Coll5
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll6
+		Floor0	0
+	GROUP END
+	GROUP Coll7
+		Floor0	0
+		Block0	0
+		Block1	1
+		Block2	2
+	GROUP END
+	GROUP Coll8
+		Floor0	0
+	GROUP END
+	ELEMENT END
+
+
+######### 5x5 1200-1299 #########
+
+	ELEMENT			5x5_1
+	ID			1200
+	File			g_5x5_01.AMO
+	Size			5
+	GROUP Coll0
+		Floor0	0
+	GROUP END
+	GROUP Coll1
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll2
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll3
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll4
+		Floor0	0
+	GROUP END
+	GROUP Coll5
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll6
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll7
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll8
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll9
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll10
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll11
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll12
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll13
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll14
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll15
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll16
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll17
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll18
+		Floor0	0
+		Block0	0
+		Block1	1
+	GROUP END
+	GROUP Coll19
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll20
+		Floor0	0
+	GROUP END
+	GROUP Coll21
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll22
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll23
+		Floor0	0
+		Block0	0
+	GROUP END
+	GROUP Coll24
+		Floor0	0
+	GROUP END
+	ELEMENT END
+
+	ELEMENT			5x5_2
+	ID			1201
+	File			g_5x5_02.AMO
+	Size			5
+	GROUP Coll0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+		Block4	0
+	GROUP END
+	GROUP Coll1
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll2
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll3
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll4
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+		Block4	0
+	GROUP END
+	GROUP Coll5
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll6
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll7
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll8
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll9
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll10
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll11
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll12
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll13
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll14
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll15
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll16
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll17
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll18
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll19
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll20
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+		Block4	0
+	GROUP END
+	GROUP Coll21
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll22
+		Floor0	0
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll23
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+	GROUP END
+	GROUP Coll24
+		Block0	-1
+		Block1	-2
+		Block2	-3
+		Block3	-4
+		Block4	0
+	GROUP END
+	ELEMENT END
+
+######### Mega 1300-1399 #########
+
+
+######### Stacked 1400-1499 #########
+
+
+	ELEMENT			EndWall
+	ID			1400
+	Collision 		VOID
+	GROUP Models
+		ELEMENT 	EndCap
+		File		g_endcap_03.amo
+		Rotation	180
+		ELEMENT END
+
+		ELEMENT 	HiWall
+		File		g_floor3_01.amo	
+		Height		0
+		ELEMENT END
+	GROUP END
+	Floor			0
+	Block0			-2
+	Block1			-1
+	BLock2			0
+	ELEMENT END 
+
+
+ELEMENT   RaisedWall
+ ID   1402
+ GROUP Models
+  ELEMENT  Wall
+  File  g_wall_01.amo
+  Rotation 0
+  ELEMENT END
+
+  ELEMENT  HiFloor
+  File  g_floor3_05.amo
+  Height  0
+  ELEMENT END
+ GROUP END
+ Floor   0
+ Block0   -2
+ Block1   -1
+ BLock2   0
+ ELEMENT END
+
+ ELEMENT   RaisedCap
+ ID   1403
+ GROUP Models
+  ELEMENT  Butt
+  File  g_endcap_01.amo
+  Rotation 0
+  ELEMENT END
+
+  ELEMENT  HiFloor
+  File  g_floor3_03.amo
+  Height  0
+  Rotation 270
+  ELEMENT END
+ GROUP END
+ Floor   0
+ Block0   -2
+ Block1   -1
+ BLock2   0
+ ELEMENT END
+
+ ELEMENT   BrdgeRl1
+ ID   1404
+ GROUP Models
+  ELEMENT  Rail
+  File  g_rail_01.AMO
+  Rotation 0
+  ELEMENT END
+
+  ELEMENT  Bridge
+  File  g_bridge_02.AMO
+  Height  4800
+  Rotation 90
+  ELEMENT END
+ GROUP END
+ Floor   3
+EastRail 0
+ ELEMENT END
+
+ ELEMENT   BrdgeRl2
+ ID   1405
+ GROUP Models
+  ELEMENT  Rail
+  File  g_rail_01.AMO
+  Rotation 0
+  ELEMENT END
+
+  ELEMENT  Bridge
+  File  g_bridge_02.AMO
+  Height  4800
+  Rotation 270
+  ELEMENT END
+ GROUP END
+ Floor   3
+EastRail 0
+ ELEMENT END
+
+
+GROUP END

@@ -1,0 +1,203 @@
+# Goodies to get
+GROUP Powerups
+	ELEMENT Speed
+	Name		Speed
+	ID			0
+	Type		SPEED
+	Model		p_speed.AMO
+	Message		SPEED UP
+	Length		20
+	SpeedFactor	1.5
+	ELEMENT END
+
+	ELEMENT DoubleShot
+	Name		Double Shot
+	ID			1
+	Type		MULTIPLE
+	Model		p_2shot.AMO
+	Message		DOUBLE SHOT
+	Length		15
+	ShotCount	2
+	ELEMENT END
+
+	ELEMENT TripleShot
+	Name		Triple Shot
+	ID			6
+	Type		MULTIPLE
+	Model		p_3shot.AMO
+	Message		TRIPLE SHOT
+	Length		15
+	ShotCount	3
+	ELEMENT END
+
+	ELEMENT Supergun
+	Name		Supergun
+	ID			8
+	Type		SPECIALSHOT
+	Model		p_supergun.AMO
+	Message		SUPER GUN
+	Length		15
+	# Ability 1: exploding bullets
+	Ability		1
+	BlastRadius	10
+	ELEMENT END
+
+	ELEMENT Bounce
+	Name		Bounce
+	ID			9
+	Type		SPECIALSHOT
+	Model		p_bounceshot.AMO
+	Message		BOUNCE
+	Length		15
+	# Ability 2: bouncing bullets
+	Ability		2
+	MaxBounces	3
+	ELEMENT END
+
+	ELEMENT Bonus1000
+	Name		1000 Pts
+	ID			2
+	Type		POINTS
+	Model		p_points.AMO
+	Message		1000 POINTS
+	Points		1000
+	ELEMENT END
+
+	ELEMENT Repair
+	Name		Repair
+	ID			3
+	Type		REPAIR
+	Model		p_1repair.AMO
+	Message		DAMAGE REPAIRED
+	HitPoints	1
+	ELEMENT END
+
+	ELEMENT FullRepair
+	Name		Full Repair
+	ID			4
+	Type		REPAIR
+	Model		p_allrepair.AMO
+	Message		ALL DAMAGE REPAIRED
+	HitPoints	9999
+	ELEMENT END
+
+	ELEMENT ExtraLife
+	Name		Extra Life
+	ID			5
+	Type		LIVES
+	Model		p_1life.AMO
+	Message		EXTRA LIFE!
+	Lives		1
+	ELEMENT END
+
+	ELEMENT ExtraLives
+	Name		3 Extra Lives
+	ID			10
+	Type		LIVES
+	Model		p_3lives.AMO
+	Message		EXTRA LIFE!
+	Lives		3
+	ELEMENT END
+
+	ELEMENT Shield
+	Name		Shield
+	ID			7
+	Type		SHIELD
+	Model		p_shield.AMO
+	Message		SHIELD UP!
+	Length		15
+	ELEMENT END
+
+	ELEMENT BonusCent
+	Name		1 Pt
+	ID			11
+	Type		POINTS
+	Model		p_1point.AMO
+	Message		1 POINT!
+	Points		1
+	ELEMENT END
+
+	ELEMENT SmartBomb
+	Name		Smart Bomb
+	ID			12
+	Type		SMARTBOMB
+	Model		p_smartbomb.AMO
+	Message		SMART BOMB!
+	Radius		48
+	Damage		3
+	ELEMENT END
+
+	ELEMENT Points2x
+	Name		2x Points
+	ID			13
+	Type		MULTIPLIER
+	Model		p_2x.AMO
+	Message		2X!
+	Factor		2
+	ELEMENT END
+
+	ELEMENT Points4x
+	Name		4x Points
+	ID			14
+	Type		MULTIPLIER
+	Model		p_4x.AMO
+	Message		4X!
+	Factor		4
+	ELEMENT END
+
+	ELEMENT Points8x
+	Name		8x Points
+	ID			15
+	Type		MULTIPLIER
+	Model		p_8x.AMO
+	Message		8X!
+	Factor		8
+	ELEMENT END
+
+	ELEMENT Invisiblility
+	Name		Invisibility
+	ID			16
+	Type		INVISIBLE
+	Model		p_invisibility.AMO
+	Message		INVISIBILITY!
+	Length		10
+	ELEMENT END
+
+	ELEMENT Secret1
+	Name		Unlock Firebat
+	ID			17
+	Type		SECRET
+	Model		p_secret.AMO
+	Message		SECRET TANK UNLOCKED!
+	SecretID	3
+	ELEMENT END
+
+	ELEMENT Secret2
+	Name		Unlock Dagger
+	ID			18
+	Type		SECRET
+	Model		p_secret.AMO
+	Message		SECRET TANK UNLOCKED!
+	SecretID	4
+	ELEMENT END
+
+	ELEMENT Secret3
+	Name		Unlock Ironclad
+	ID			19
+	Type		SECRET
+	Model		p_secret.AMO
+	Message		SECRET TANK UNLOCKED!
+	SecretID	5
+	ELEMENT END
+
+	ELEMENT Burst
+	Name		Burst
+	ID			20
+	Type		SPEED
+	Model		p_burst.AMO
+	Message		BURST
+	Length		2
+	SpeedFactor	1.5
+	ELEMENT END
+
+GROUP END

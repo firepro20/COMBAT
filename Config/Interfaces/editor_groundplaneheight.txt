@@ -1,0 +1,8 @@
+# This displays the map height for the editor.
+GROUP Interface
+	ELEMENT 	Height
+	Type 		Text
+	MaxLength	32
+	Font		Console
+	ELEMENT END
+GROUP END

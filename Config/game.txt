@@ -1,0 +1,57 @@
+GROUP Enemies
+	ELEMENT Drone
+	Name 		Solid Fuel Drone
+	Model		e_1hit_01.AMO
+	BrainID		1
+	HitPoints	1
+	Score		100
+	ELEMENT END
+
+	ELEMENT 	Tank
+	Name		Digital Tank
+	Model		e_1hit_02.AMO
+	BrainID		2
+	HitPoints	1
+	Score		500
+	ELEMENT END
+GROUP END
+
+GROUP Powerups
+	ELEMENT DoubleShot
+	Name		Double Shot
+	Message		DOUBLE SHOT
+	Length		15
+	ELEMENT END
+
+	ELEMENT Speed
+	Name		Speed
+	Message		SPEED UP
+	Length		20
+	ELEMENT END
+
+	ELEMENT Bonus1000
+	Name		1000 Pts
+	Message		1000 POINTS
+	ELEMENT END
+
+	ELEMENT Repair
+	Name		Repair
+	Message		DAMAGE REPAIRED
+	ELEMENT END
+
+	ELEMENT FullRepair
+	Name		Full Repair
+	Message		ALL DAMAGE REPAIRED
+	ELEMENT END
+
+	ELEMENT ExtraLife
+	Name		Extra Life
+	Message		EXTRA LIFE!
+	ELEMENT END
+
+	ELEMENT LevelSkip
+	Name		Level Skip
+	Message		OUTTA HERE!
+	ELEMENT END
+GROUP END
+

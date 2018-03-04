@@ -1,0 +1,8 @@
+# This displays tank status messages.
+GROUP Interface
+	ELEMENT 	Message
+	Type 		Text
+	MaxLength	32
+	Font		Interface
+	ELEMENT END
+GROUP END

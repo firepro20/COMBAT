@@ -1,0 +1,18 @@
+You'll find some new challenges here.
+
+Drive up to a door to open it.
+	
+Drive onto a platform to activate it.
+
+You'll also discover a keyed door.
+
+This will present you with an icon of
+the trigger needed to open the door.
+
+Destroy the trigger enemy and the
+door will open for you.
+
+To suceed in Combat is simple: survive
+until you can reach the exit orb.
+
+Good luck!

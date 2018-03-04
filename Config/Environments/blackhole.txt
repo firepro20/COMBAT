@@ -1,0 +1,44 @@
+# Spiraly blackhole thingy 
+
+LightAngle		210
+LightElevation	20
+LightColor		0x00FFFF
+LightAmbient	0x004444
+
+UseFog			True
+FogStart		100
+FogEnd			650
+FogColor		0x000000
+
+NoSkyColor			0x000000
+SimpleSkyZenithColorTop		0x0004060A
+SimpleSkyHorizonColorTop	0x0004060A
+SimpleSkyHorizonColorBot	0x0004060A
+SImpleSkyZenithColorBot		0x001D110A
+
+GROUP SkyLevels
+ELEMENT Spiral01
+	#Distance of Camera (1.0=normal, 0.5=larger, 0.1=tentimes as large)
+		SkyMoveFraction		.1
+	#Texture of this layer
+		SkyTextureBot		blackhole01.tga
+	#Roundness of Dome (0=flat, 30.0=normal)
+		SkyHeightBot		30.0
+	#Rotates this layer (.00002=slow)
+		SkyRotateSpeed		.00012
+	#Moves layer up and down on the y axis
+		SkyHeightAdjust 	0.0
+	ELEMENT END
+#Bottom Layer
+ELEMENT Spiral02
+		SkyMoveFraction		1.5
+		SkyTextureBot		blackhole01.tga
+		SkyHeightBot		45.0
+		SkyRotateSpeed		.00026
+		SkyHeightAdjust 	-10.0
+	ELEMENT END
+ELEMENT Background
+	SkyTextureTop		blackhole.bmp
+	SkyTextureBot		blackhole.bmp
+ELEMENT END
+GROUP END

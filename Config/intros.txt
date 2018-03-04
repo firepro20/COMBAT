@@ -1,0 +1,17 @@
+GROUP IntroElements
+	ELEMENT	FirstBumper
+	Type		Movie
+	Filename	ifgm.avi
+	ELEMENT END
+
+	ELEMENT SecondBumper
+	Type		Movie
+	Filename	mlp.avi
+	ELEMENT END
+
+	ELEMENT Title
+	Type		Still
+	Filename	start_game_logo.bmp
+	Length		1
+	ELEMENT END
+GROUP END

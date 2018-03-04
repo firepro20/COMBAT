@@ -1,0 +1,44 @@
+# Sky for Patrollers.
+
+LightAngle		122
+LightElevation	45
+LightColor		0x0099CCDD
+LightAmbient	0x005566AA
+
+UseFog			True
+FogStart		100
+FogEnd			600
+FogColor		0x005588AA
+
+NoSkyColor			0x0067E5FC
+SimpleSkyZenithColorTop		0x0067E5FC
+SimpleSkyHorizonColorTop	0x000D179A
+SimpleSkyHorizonColorBot	0x000D179A
+SImpleSkyZenithColorBot		0x0067E5FC
+
+GROUP SkyLevels
+ELEMENT Dome
+	SkyMoveFraction		1.0
+	GROUP Objects
+	ELEMENT Dome
+		Model			dome.AMO
+		ObjSize			1.0
+		ObjAngle		0
+		ObjElev			0
+	ELEMENT END
+	GROUP END
+	SkyRotateSpeed		-.0003
+ELEMENT END
+ELEMENT Background
+	SkyClearColor		0x00000000
+	SkyTextureBot		blackhole.bmp
+	SkyHeightBot		65.0f
+	SkyMoveFraction		0
+ELEMENT END
+ELEMENT Background
+	SkyClearColor		0x00000000
+	SkyTextureTop		blackhole.bmp
+	SkyHeightTop		65.0f
+	SkyMoveFraction		0
+ELEMENT END
+GROUP END

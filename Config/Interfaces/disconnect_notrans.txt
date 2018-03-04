@@ -1,0 +1,8 @@
+# Icon warning of network problems.
+GROUP Interface
+	ELEMENT 	warningicon
+	Type		Sprite
+	Flags		IFACE_BLEND_NORMAL
+	Texture		backhoe_notrans.bmp
+	ELEMENT END
+GROUP END

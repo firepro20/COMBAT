@@ -1,0 +1,196 @@
+# Gunship boss config
+
+# boss ID
+ID				2
+# displayed version
+Version			0.20
+# displayed name
+Name			Gunship
+# model
+ModelName		gunship.AMO
+# scale fac
+Scale			1.7
+# hover altitude
+Altitude		3.0
+# points awarded for defeating it
+Score			10000
+# how many goodies come out
+TreasureType	1
+TreasureCount	3
+
+# Speed values
+# These are how many seconds the vehicle takes to traverse a huge tile.
+# How fast under normal circumstances
+NormalSpeed		2.0
+#NormalSpeed		1.0
+# How fast when it is pursuing the player
+FastSpeed		0.62
+# Slow down by this factor (multiply it by the time) when cornering
+CorneringSpeed	1.5
+# How quickly speed changes up or down (sec/sec)
+SpeedChange		1.0
+# How much it tilts when turning
+CorneringTilt	.15
+
+# hull of boss is invulnerable?
+Invulnerable		True
+# name of collision volume
+CollisionVolume		Collision
+# max collision radius
+CollisionRadius		40
+
+GROUP Turrets
+	ELEMENT MainTurret
+	ChildName		Turret
+	Type			PERCUSSION
+	Autonomous		True
+	CollisionRadius	10
+	NumBarrels		2
+	StartAngle		0
+	MinAngle		-30
+	MaxAngle		30
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		9999
+	ShotInterval	1.79
+	ShotSpeed		250
+	ReloadTime		2.03
+	HitPoints		63
+	ELEMENT END
+
+	ELEMENT FrontTurretLeft
+	ModelName		gunship_dual.AMO
+	AttachPoint		Attach1
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	4
+	NumBarrels		2
+	StartAngle		0
+	MinAngle		-45
+	MaxAngle		90
+	SweepAttack		False
+	SweepAngle		15
+	RotationSpeed	2.5
+	ClipSize		5
+	ShotSpeed		250
+	ShotInterval	.65
+	ReloadTime		1.25
+	HitPoints		10
+	Score			500
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT FrontTurretRight
+	ModelName		gunship_dual.AMO
+	AttachPoint		Attach6
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	4
+	NumBarrels		2
+	StartAngle		0
+	MinAngle		-90
+	MaxAngle		45
+	SweepAttack		False
+	SweepAngle		15
+	RotationSpeed	2.5
+	ClipSize		5
+	ShotSpeed		250
+	ShotInterval	.65
+	ReloadTime		1.25
+	HitPoints		10
+	Score			500
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT SideTurretLeft
+	ModelName		gunship_dual.AMO
+	AttachPoint		Attach2
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	4
+	NumBarrels		2
+	StartAngle		90
+	MinAngle		45
+	MaxAngle		135
+	SweepAttack		False
+	SweepAngle		15
+	RotationSpeed	2.5
+	ClipSize		5
+	ShotSpeed		170
+	ShotInterval	.65
+	ReloadTime		1.25
+	HitPoints		10
+	Score			500
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT SideTurretRight
+	ModelName		gunship_dual.AMO
+	AttachPoint		Attach5
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	4
+	NumBarrels		2
+	StartAngle		270
+	MinAngle		225
+	MaxAngle		315
+	SweepAttack		False
+	SweepAngle		15
+	RotationSpeed	2.5
+	ClipSize		5
+	ShotSpeed		170
+	ShotInterval	.65
+	ReloadTime		1.25
+	HitPoints		10
+	Score			500
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT RearTurretLeft
+	ModelName		gunship_dual.AMO
+	AttachPoint		Attach3
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	4
+	NumBarrels 		2
+	StartAngle		180
+	MinAngle		90
+	MaxAngle		225
+	SweepAttack		False
+	RotationSpeed	2.5
+	ClipSize		6
+	ShotInterval	.3
+	ReloadTime		1.0
+	ShotSpeed		170
+	ShotSize		2.5
+	HitPoints		8
+	Score			500
+	TreasureType	2
+	ELEMENT END
+
+	ELEMENT RearTurretRight
+	ModelName		gunship_dual.AMO
+	AttachPoint		Attach4
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	4
+	NumBarrels 		2
+	StartAngle		180
+	MinAngle		135
+	MaxAngle		270
+	SweepAttack		False
+	RotationSpeed	2.5
+	ClipSize		6
+	ShotInterval	.3
+	ReloadTime		1.0
+	ShotSpeed		170
+	ShotSize		2.5
+	HitPoints		8
+	Score			500
+	TreasureType	2
+	ELEMENT END
+GROUP END
+
+	
+	
+	

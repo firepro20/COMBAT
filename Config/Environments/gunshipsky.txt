@@ -1,0 +1,38 @@
+# The sky for the Gunship Fight.
+
+LightAngle		210
+LightElevation	20
+LightColor		0x0087899B
+LightAmbient	0x004F4F4F
+
+UseFog			True
+FogStart		90
+FogEnd			550
+FogColor		0x00444460
+
+NoSkyColor			0x008183A7
+SimpleSkyZenithColorTop		0x00384162
+SimpleSkyHorizonColorTop	0x00C0B8D6
+SimpleSkyHorizonColorBot	0x00C0B8D6
+SImpleSkyZenithColorBot		0x00384162
+
+GROUP SkyLevels
+ELEMENT Clouds
+	SkyTextureBot		cloudtest03.bmp
+	SkyTransparencyBot	transp-cloudtest03.bmp
+	SkyTextureTop		cloudtest03.bmp
+	SkyTransparencyTop	transp-cloudtest03.bmp
+	SkyHeightTop		25
+	SkyHeightBot		15
+	SkyMoveFraction		.04
+	SkyRotateSpeed		.000045
+ELEMENT END
+ELEMENT Background
+	SkyTextureTop		storm01.bmp
+	SkyTextureBot		storm01.bmp
+	SkyHeightTop		35
+	SkyHeightBot		15
+	SkyMoveFraction		.5
+	SkyRotateSpeed		.000015
+ELEMENT END
+GROUP END

@@ -1,0 +1,11 @@
+# This is the engine stats display interface.
+GROUP Interface
+	ELEMENT 	EngineStats
+	Type 		Text
+	Flags		IFACE_GLOBAL
+	XPosition	650
+	YPosition	210
+	MaxLength	512
+	Font		Console
+	ELEMENT END
+GROUP END

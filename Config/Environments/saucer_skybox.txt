@@ -1,0 +1,20 @@
+#VR skybox
+
+LightAngle		0
+LightElevation	80
+LightColor		0xA2C1EF
+LightAmbient	0x719CDF
+
+UseFog			True
+FogStart		100
+FogEnd			650
+FogColor		0x00000
+
+GROUP SkyLevels
+ELEMENT Background
+	SkyHorizonColorTop	0x00000000
+	SkyZenithColorTop	0x00000000
+	SkyHorizonColorBot	0x00000000
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

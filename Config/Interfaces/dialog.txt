@@ -1,0 +1,48 @@
+# This displays a dialog box.
+GROUP Interface
+	ELEMENT 	Dialog
+	Type		Dummy
+    	GROUP Children
+    	ELEMENT 	Text
+     	Type 		Text
+    	MaxLength	256
+    	Font		Interface
+		Scale		1.5
+       	XPosition	0
+    	YPosition	0
+    	ELEMENT END
+    
+    	ELEMENT 	OK
+     	Type 		Text
+    	MaxLength	4
+    	Font		Interface
+		Scale		1.5
+       	XPosition	0
+    	YPosition	120
+		Text		OK
+    	ELEMENT END
+
+    	ELEMENT 	OK_Center
+     	Type 		Text
+    	MaxLength	4
+    	Font		Interface
+		Scale		1.5
+       	XPosition	168
+    	YPosition	120
+		Text		OK
+    	ELEMENT END
+ 
+    	ELEMENT 	NO
+     	Type 		Text
+    	MaxLength	4
+    	Font		Interface
+		Scale		1.5
+       	XPosition	336
+    	YPosition	120
+		Text		NO
+    	ELEMENT END
+		GROUP END
+	ELEMENT END
+GROUP END
+
+    

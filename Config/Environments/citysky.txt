@@ -1,0 +1,25 @@
+# City?
+
+UseFog			True
+FogStart		100
+FogEnd			450
+FogColor		0x00223344
+
+NoSkyColor					0x003B446C
+SimpleSkyZenithColorTop		0x00CCC3DA
+SimpleSkyHorizonColorTop	0x009A94B4
+SimpleSkyHorizonColorBot	0x00636182
+SImpleSkyZenithColorBot		0x00272E55
+
+LightAngle		122
+LightElevation	45
+LightColor		0x007788BB
+LightAmbient	0x00556655
+
+GROUP SkyLevels
+ELEMENT Grid
+	SkyTextureTop		storm01.bmp
+	SkyTextureBot		storm01.bmp
+	SkyMoveFraction		.02
+ELEMENT END
+GROUP END

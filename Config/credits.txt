@@ -1,0 +1,117 @@
+COMBAT|n
+|n
+|n
+Published by Infogrames Interactive|n
+Developed by Magic Lantern Playware|n
+|n
+|n
+The Magic Lantern Playware Team:|n
+|n
+Joe Barnes|n
+3D Art and Maps|n
+|n
+George Chadderdon|n
+AI Coding|n
+|n
+John Fowler|n
+Business and Management|n
+|n
+Tony Gaddis|n
+Levels and Skies|n
+|n
+Vicki Jackson|n
+Office Goddess|n
+|n
+Chris Listello|n
+Art Director|n
+|n
+Duncan McPherson|n
+SFX, Music and Levels|n
+|n
+Jeff Miller|n
+Tilesets, 2D & 3D Art, Levels|n
+|n
+Peter Riis|n
+Levels|n
+|n
+Mark Sachs|n
+Lead Programmer|n
+|n
+Paul Schuytema|n
+Production|n
+|n
+The entire MLP Team|n
+Design|n
+|n
+|n
+The Infogrames Interactive Team|n
+|n
+Todd Hartwig|n
+Producer|n
+|n
+Matt Collins|n
+Brand Manager|n
+|n
+Bill Levay|n
+Executive Producer|n
+|n
+Michael Craighead|n
+Director of Quality Assurance, North America|n
+|n
+Kurt Boutin|n
+Senior Manager, Q.A. Certification Group|n
+|n
+Randy Lee|n
+Bill Carroll|n
+Q.A. Testing Managers|n
+|n
+Mark Huggins|n
+Q.A. Certification Lead|n
+|n
+Tony Calabresi|n
+Lead Tester|n
+|n
+Tim Burpee|n
+Matt Pantaleoni|n
+Joe Howard|n
+Clif McClure|n
+Erik Maramaldi|n
+Becky Madore|n
+Karen Gledhill|n
+Michael Murphy|n
+Testers|n
+|n
+Steve Arthur|n
+Director of Marketing|n
+|n
+Steve Martin|n
+Manager of Creative Services|n
+|n
+Elizabeth Mackney|n
+Manager of Editorial and Documentation Services|n
+|n
+Paul Collin|n
+Copywriter|n
+|n
+|n
+Special Thanks To|n
+Mike Burrows|n
+Steve Willett|n
+|n
+|n
+|n
+|n
+Copyright 2001 Infogrames Interactive, Inc.|n
+|n
+Manufactured and marketed by|n
+Infogrames, Inc., New York, NY|n
+|n
+All trademarks are the property|n
+of their respective owners.|n
+|n
+|n
+|n
+|n
+|n
+|n
+Thank you for playing!|n|n

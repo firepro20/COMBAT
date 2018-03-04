@@ -1,0 +1,35 @@
+# sewer clouds.
+
+LightAngle		0
+LightElevation	80
+LightColor		0x155634
+LightAmbient	0x6F8889
+
+UseFog			True
+FogStart		.002
+FogEnd			650
+FogColor		0x155634
+
+
+NoSkyColor	 		33,113,65
+SimpleSkyZenithColorTop		70,133,101
+SimpleSkyHorizonColorTop	33,113,65
+SimpleSkyHorizonColorBot	33,113,65
+SImpleSkyZenithColorBot		16,72,46
+
+GROUP SkyLevels
+ELEMENT Grid
+	SkyTextureTop		clouds06.bmp
+	SkyTextureBot		clouds06.bmp
+	SkyHeightTop		55
+	SkyHeightBot		30
+	SkyMoveFraction		.03
+	SkyRotateSpeed		.000066
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00111144
+	SkyZenithColorTop	0x002222FF
+	SkyHorizonColorBot	0x00111144
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

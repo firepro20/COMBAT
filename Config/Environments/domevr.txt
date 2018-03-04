@@ -1,0 +1,46 @@
+# Object test.
+
+LightAngle		122
+LightElevation	45
+LightColor		0x0099CCDD
+LightAmbient	0x005566AA
+
+UseFog			True
+FogStart		100
+FogEnd			450
+FogColor		0x00000000
+
+NoSkyColor			0x00000000
+SimpleSkyZenithColorTop		0x00000000
+SimpleSkyHorizonColorTop	0x00000000
+SimpleSkyHorizonColorBot	0x00000000
+SImpleSkyZenithColorBot		0x00000000
+
+GROUP SkyLevels
+ELEMENT Dome
+	SkyMoveFraction		1.0
+	SkyRotateSpeed		0.0003
+	GROUP Objects
+	ELEMENT Dome
+		Model			vr_skybox_knot.AMO
+		ObjSize			6.0
+		ObjAngle		0
+		ObjElev			0
+	ELEMENT END
+	GROUP END
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00000000
+	SkyZenithColorTop	0x00000000
+	SkyHorizonColorBot	0x00000000
+	SkyZenithColorBot	0x00000000
+	GROUP Bitmaps
+	ELEMENT Earth
+ 		BitmapFile		earth.tga
+ 		BitmapAngle		12
+ 		BitmapElev		-12
+ 		BitmapSize		4.0f
+ 	ELEMENT END
+	GROUP END
+ELEMENT END
+GROUP END

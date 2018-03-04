@@ -1,0 +1,112 @@
+# This displays the score and other in-game data.
+GROUP Interface
+	ELEMENT 	ScoreDisplay
+	Type		Dummy
+    	GROUP Children
+    	ELEMENT 	HP0
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		hp_notrans.bmp
+    	XPosition	10
+    	YPosition	8
+    	ELEMENT END
+    
+    	ELEMENT 	HP1
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		hp_notrans.bmp
+    	XPosition	50
+    	YPosition	8
+    	ELEMENT END
+    
+    	ELEMENT 	HP2
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		hp_notrans.bmp
+    	XPosition	90
+    	YPosition	8
+    	ELEMENT END
+
+    	ELEMENT 	HP3
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		hp_notrans.bmp
+    	XPosition	130
+    	YPosition	8
+    	ELEMENT END
+    
+    	ELEMENT 	HP4
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		hp_notrans.bmp
+    	XPosition	170
+    	YPosition	8
+    	ELEMENT END
+
+    	ELEMENT 	Life0
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		life_notrans.bmp
+    	XPosition	10
+    	YPosition	30
+    	ELEMENT END
+    
+    	ELEMENT 	Life1
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		life_notrans.bmp
+    	XPosition	50
+    	YPosition	30
+    	ELEMENT END
+    
+    	ELEMENT 	Life2
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		life_notrans.bmp
+    	XPosition	90
+    	YPosition	30
+    	ELEMENT END
+    
+    	ELEMENT 	Life3
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		life_notrans.bmp
+    	XPosition	130
+    	YPosition	30
+    	ELEMENT END
+
+	   	ELEMENT 	Life4
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		life_notrans.bmp
+    	XPosition	170
+    	YPosition	30
+    	ELEMENT END
+     
+    	ELEMENT 	MoreLife
+    	Type		Sprite
+    	Flags		IFACE_BLEND_NORMAL
+    	Texture		morelife_notrans.bmp
+    	XPosition	205
+    	YPosition	25
+    	ELEMENT END
+
+    	ELEMENT 	Score
+    	Type 		Text
+    	MaxLength	256
+    	XPosition	10
+    	YPosition	64
+    	Font		Interface
+    	ELEMENT END
+   
+    	ELEMENT 	HiScore
+    	Type 		Text
+    	MaxLength	256
+    	XPosition	10
+    	YPosition	82
+		Color		0x00AAAAAA
+    	Font		Interface
+    	ELEMENT END
+		GROUP END
+	ELEMENT END
+GROUP END

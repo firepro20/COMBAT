@@ -1,0 +1,43 @@
+# The Sun.
+
+LightAngle		0
+LightElevation	-19
+LightColor		0x00FF9911
+LightAmbient	0x00663300
+
+UseFog			True
+FogStart		100
+FogEnd			450
+FogColor		0x00000000
+
+NoSkyColor			0x00000000
+SimpleSkyZenithColorTop		0x00000000
+SimpleSkyHorizonColorTop	0x00000000
+SimpleSkyHorizonColorBot	0x00FFCF27
+SImpleSkyZenithColorBot		0x00FF8227
+
+GROUP SkyLevels
+ELEMENT Moon
+	GROUP Bitmaps
+	ELEMENT Moon
+ 		BitmapFile		darkmoon.tga
+ 		BitmapAngle		12
+ 		BitmapElev		-24
+ 		BitmapSize		1.25f
+ 	ELEMENT END
+	GROUP END
+ELEMENT END
+ELEMENT SunSurface
+	SkyMoveFraction		1.0
+	SkyHeightAdjust		-90.5
+	SkyTextureBot		sun.bmp
+	SkyHeightBot		-40.5
+	SkyRotateZ			-35
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00000000
+	SkyZenithColorTop	0x00000000
+	SkyHorizonColorBot	0x00000000
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

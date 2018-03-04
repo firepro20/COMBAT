@@ -1,0 +1,140 @@
+# Carrier boss config
+
+# boss ID
+ID				4
+# displayed version
+Version			0.60
+# displayed name
+Name			Carrier
+# model
+ModelName		e_carrier.AMO
+# scale fac
+Scale			2.0
+# hover altitude
+Altitude		-12.0
+# points awarded for defeating it
+Score			15000
+# how many goodies come out
+TreasureType	1
+TreasureCount	4
+
+TopSpeed		100
+Acceleration	75
+BrakePower		50
+TurnSpeed		.15
+
+MaxPlanes		10
+
+# hull of boss is invulnerable?
+Invulnerable		True
+# name of collision volume
+CollisionVolume				collisionmiddle
+LeftDeckCollisionVolume		collision
+RightDeckCollisionVolume	collision1
+# max collision radius
+CollisionRadius		100
+# hit points (for the carrier's second phase)
+HitPoints			40
+
+GROUP Turrets
+	ELEMENT DeathRay
+	ChildName		deathray
+	Type			DEATHRAY
+	Autonomous		False
+	NumBarrels		1
+	ShotSize		10
+	ShotInterval	2.26
+	ReloadTime		.22
+	Invulnerable	True
+	ELEMENT END
+
+	ELEMENT FrontTurretRight
+	ModelName		e_carrier_smallturret.AMO
+	AttachPoint		attach_turret
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	7
+	NumBarrels		1
+	StartAngle		0
+	MinAngle		-50
+	MaxAngle		50
+	SweepAttack		False
+	SweepAngle		30
+	RotationSpeed	1.00
+	ClipSize		5
+	ShotInterval	.45
+	ShotSpeed		250
+	ReloadTime		1.00
+	HitPoints		25
+	Score			550
+	TreasureType	0
+	NoBlock			True
+	ELEMENT END
+
+	ELEMENT FrontTurretLeft
+	ModelName		e_carrier_smallturret.AMO
+	AttachPoint		attach_turret3
+	Type			PLASMA
+	Autonomous		True
+	CollisionRadius	7
+	NumBarrels		1
+	StartAngle		0
+	MinAngle		-50
+	MaxAngle		50
+	SweepAttack		False
+	SweepAngle		30
+	RotationSpeed	1.65
+	ClipSize		5
+	ShotInterval	.45
+	ShotSpeed		250
+	ReloadTime		1.00
+	HitPoints		25
+	Score			550
+	TreasureType	0
+	NoBlock			True
+	ELEMENT END
+
+	ELEMENT SideTurretRight
+	ModelName		e_carrier_largeturret.AMO
+	AttachPoint		attach_turret1
+	Type			PERCUSSION
+	Autonomous		True
+	CollisionRadius	9
+	NumBarrels		1
+	StartAngle		270
+	MinAngle		210
+	MaxAngle		330
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		5
+	ShotInterval	.75
+	ShotSpeed		250
+	ReloadTime		1.50
+	HitPoints		36
+	Score			800
+	TreasureType	0
+	NoBlock			True
+	ELEMENT END
+
+	ELEMENT SideTurretLeft
+	ModelName		e_carrier_largeturret.AMO
+	AttachPoint		attach_turret2
+	Type			PERCUSSION
+	Autonomous		True
+	CollisionRadius	9
+	NumBarrels		1
+	StartAngle		90
+	MinAngle		30
+	MaxAngle		150
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		5
+	ShotInterval	.75
+	ShotSpeed		250
+	ReloadTime		1.50
+	HitPoints		36
+	Score			800
+	TreasureType	0
+	NoBlock			True
+	ELEMENT END
+GROUP END

@@ -1,0 +1,15 @@
+#Auto-Generated Configuration
+#
+#1/2/2002 19:20:58
+#
+#
+GROUP WindowPositions
+	TilePaletteX 642
+	TilePaletteY 102
+	TilePaletteWidth 264
+	TilePaletteHeight 552
+	ObjectPaletteX 930
+	ObjectPaletteY 247
+	ObjectPaletteWidth 72
+	ObjectPaletteHeight 456
+GROUP END

@@ -1,0 +1,26 @@
+Welcome to Combat!
+
+Let's begin by practicing
+some basic tank movement.
+
+	
+Use the forward and back
+controls to move your tank.
+
+
+The left and right controls
+will turn your tank.
+
+
+Notice how the tank will lean
+with your movements.
+
+
+Use the fire control to shoot.	
+
+
+After you kill the enemies,
+drive into the EXIT ORB to
+complete the level.
+
+

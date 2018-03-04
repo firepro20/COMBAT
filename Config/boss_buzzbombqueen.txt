@@ -1,0 +1,138 @@
+# Buzz Bomb Queen boss config
+
+# boss ID
+ID				5
+# displayed version
+Version			0.80
+# displayed name
+Name			Buzz Bomb Queen
+# model
+ModelName		e_buzzbombqueen_01.AMO
+# scale fac
+Scale			4.95
+# hover altitude
+Altitude		15.0
+# points awarded for defeating it
+Score			20000
+# how many goodies come out
+TreasureType	1
+TreasureCount	5
+
+TopSpeed		100
+Acceleration	75
+BrakePower		50
+TurnSpeed		1.5
+
+# Time needed to travel between nodes on the playfield
+NodeTime		1.2
+DiagNodeTime	1.5
+
+# hull of boss is invulnerable?
+Invulnerable		False
+# name of collision volume
+CollisionVolume		Collision
+# max collision radius
+CollisionRadius		24
+# hit points
+HitPoints			90
+
+GROUP Turrets
+	ELEMENT DeathRay
+	ChildName		deathray
+	Type			DEATHRAY
+	Autonomous		False
+	NumBarrels		1
+	ShotSize		10
+	ShotInterval	2.26
+# 5.0
+	ReloadTime		.22
+	Invulnerable	True
+	ELEMENT END
+
+	ELEMENT SmallTurretLeft
+	ModelName		e_buzzbombqueen_turret.AMO
+	AttachPoint		smallgunattach
+	Scale			.7
+	Type			PLASMA
+	Autonomous		False
+	CollisionRadius	4
+	NumBarrels		1
+	StartAngle		0
+	MinAngle		-20
+	MaxAngle		20
+	SweepAttack		True
+	SweepAngle		15
+	RotationSpeed	4.1
+	ClipSize		99999
+	ShotSpeed		200
+	ShotInterval	.2
+	ReloadTime		1.00
+	HitPoints		20
+	Score			500
+	ELEMENT END
+
+	ELEMENT SmallTurretRight
+	ModelName		e_buzzbombqueen_turret.AMO
+	AttachPoint		smallgunattact1
+	Scale			.7
+	Type			PLASMA
+	Autonomous		False
+	CollisionRadius	5
+	NumBarrels		1
+	StartAngle		0
+	MinAngle		-20
+	MaxAngle		20
+	SweepAttack		True
+	SweepAngle		15
+	RotationSpeed	4.1
+	ClipSize		99999
+	ShotSpeed		200
+	ShotInterval	.2
+	ReloadTime		1.00
+	HitPoints		20
+	Score			500
+	ELEMENT END
+
+	ELEMENT BigTurretLeft
+	ModelName		e_buzzbombqueen_biggun.AMO
+	AttachPoint		biggunattach
+	Type			PERCUSSION
+	Autonomous		False
+	CollisionVolume	Collision
+	CollisionRadius	12
+	SweepAttack		True
+	StartAngle		0
+	SweepAngle		0
+	ClipSize		99999
+	ShotSpeed		200
+	ShotInterval	.45
+	ReloadTime		1.00
+	NumBarrels		1
+	ShotSpeed		200
+	HitPoints		30
+	Score			800
+	ELEMENT END
+
+	ELEMENT BigTurretRight
+	ModelName		e_buzzbombqueen_biggun.AMO
+	AttachPoint		biggunattach1
+	Type			PERCUSSION
+	Autonomous		False
+	CollisionVolume	Collision
+	CollisionRadius	12
+	SweepAttack		True
+	StartAngle		0
+	SweepAngle		0
+	ClipSize		99999
+	ShotSpeed		200
+	ShotInterval	.45
+	ReloadTime		1.00
+	NumBarrels		1
+	HitPoints		30
+	Score			800
+	ELEMENT END
+GROUP END
+
+	
+	
+	

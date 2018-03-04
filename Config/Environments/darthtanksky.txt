@@ -1,0 +1,35 @@
+
+
+LightAngle		45
+LightElevation	8
+LightColor		0x00FFFFFF
+LightAmbient	0x00666666
+
+NoSkyColor			0x00C0C0C0
+SimpleSkyZenithColorTop		0x00000000
+SimpleSkyHorizonColorTop	0x00C0C0C0
+SimpleSkyHorizonColorBot	0x00C0C0C0
+SImpleSkyZenithColorBot		0x00FFFFFF
+
+UseFog			False
+FogStart		100
+FogEnd			250
+FogColor		0x00FFFFFF
+
+GROUP SkyLevels
+ELEMENT Clouds
+	SkyTextureBot		graysky.bmp
+	SkyTransparencyBot	transp-cloudtest03.bmp
+	SkyTextureTop		graysky.bmp
+	SkyTransparencyTop	transp-cloudtest03.bmp
+	SkyMoveFraction		.03
+	SkyRotateSpeed		.00048
+ELEMENT END
+ELEMENT Background
+	SkyTextureTop		whitesky.bmp
+	SkyHeightTop		40.5
+	SkyTextureBot		whiteskybot.bmp
+	SkyHeightBot		40.5
+	SkyRotateSpeed		.0005
+ELEMENT END
+GROUP END

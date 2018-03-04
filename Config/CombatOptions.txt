@@ -1,0 +1,31 @@
+#Auto-Generated Configuration
+#
+#12/20/2001 16:30:38
+#
+#
+GROUP Options
+	Sound True
+	3DSound False
+	SoundVolume 0.846400
+	Music True
+	MusicVolume 1.000000
+	MouseSensitivity 1.0
+	MaxFrameLength 33
+	UseGameController True
+	UseMouse False
+	Lives 3
+	Health 3
+	ExtraLife 10000
+	PlayerName Player
+	TankName Axiomatic
+	NetUpdateFrequency 50
+	VideoWidth 800
+	VideoHeight 600
+	VideoDepth 32
+	WindowedMode False
+	Skybox FANCY
+	ServerName Unnamed
+	MultiplayerLevel MP1
+	PointLimit 10
+	TimeLimit 10
+GROUP END

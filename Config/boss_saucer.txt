@@ -1,0 +1,119 @@
+# Ending saucer config
+
+# boss ID
+ID				6
+# displayed version
+Version			0.99
+# displayed name
+Name			System Terminal
+# model
+ModelName		e_saucer.AMO
+# scale fac
+Scale			1.7
+# hover altitude
+Altitude		0.0
+# points awarded for defeating it
+Score			50000
+# how many goodies come out
+TreasureType	1
+TreasureCount	0
+
+# hull of boss is invulnerable?
+Invulnerable		True
+# max collision radius
+CollisionRadius		104
+CollisionVolume		Collision
+
+SpinSpeed			.4
+SpinAccel			.8
+LowPosition			-50
+HighPosition		0
+MotionTime			5
+
+GROUP Turrets
+	ELEMENT DeathRay0
+	ModelName		e_saucer_cannon.AMO
+	AttachPoint		Attach0
+	Type			DEATHRAY
+	CollisionRadius	10
+#	CollisionVolume	Collision
+	Autonomous		False
+	NumBarrels		1
+	StartAngle		0
+	ShotSize		9
+	ShotInterval	2.26
+	ReloadTime		.22
+	Invulnerable	False
+	HitPoints		25
+	Score			2000
+	ELEMENT END
+
+	ELEMENT DeathRay1
+	ModelName		e_saucer_cannon.AMO
+	AttachPoint		Attach1
+	Type			DEATHRAY
+	CollisionRadius	10
+#	CollisionVolume	Collision
+	Autonomous		False
+	NumBarrels		1
+	StartAngle		90
+	ShotSize		9
+	ShotInterval	2.26
+	ReloadTime		.22
+	Invulnerable	False
+	HitPoints		25
+	Score			2000
+	TreasureType	0
+	ELEMENT END
+
+	ELEMENT DeathRay2
+	ModelName		e_saucer_cannon.AMO
+	AttachPoint		Attach2
+	Type			DEATHRAY
+	CollisionRadius	10
+#	CollisionVolume	Collision
+	Autonomous		False
+	NumBarrels		1
+	StartAngle		180
+	ShotSize		9
+	ShotInterval	2.26
+	ReloadTime		.22
+	Invulnerable	False
+	HitPoints		25
+	Score			2000
+	TreasureType	0
+	ELEMENT END
+
+	ELEMENT DeathRay3
+	ModelName		e_saucer_cannon.AMO
+	AttachPoint		Attach3
+	Type			DEATHRAY
+	CollisionRadius	10
+#	CollisionVolume	Collision
+	Autonomous		False
+	NumBarrels		1
+	StartAngle		270
+	ShotSize		9
+	ShotInterval	2.26
+	ReloadTime		.22
+	Invulnerable	False
+	HitPoints		25
+	Score			2000
+	TreasureType	0
+	ELEMENT END
+
+	ELEMENT Dome
+	ChildName		Dome
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	19
+	Invulnerable	False
+	BigExplosion	True
+	HitPoints		55
+	Score			50000
+	ELEMENT END
+GROUP END
+
+	
+	
+	

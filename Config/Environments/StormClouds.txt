@@ -1,0 +1,23 @@
+# Storm Clouds by Tony Gaddis.
+
+NoSkyColor			0x00817EA2
+SimpleSkyZenithColorTop		0x002C2D55
+SimpleSkyHorizonColorTop	0x00C1B7CF
+SimpleSkyHorizonColorBot	0x00C1B7CF
+SImpleSkyZenithColorBot		0x002C2D55
+
+GROUP SkyLevels
+ELEMENT Grid
+	SkyTextureTop		storm01.bmp
+	SkyTextureBot		storm01.bmp
+	SkyHeightTop		55
+	SkyHeightBot		25
+	SkyMoveFraction		.04
+ELEMENT END
+ELEMENT Background
+	SkyHorizonColorTop	0x00111144
+	SkyZenithColorTop	0x002222FF
+	SkyHorizonColorBot	0x00111144
+	SkyZenithColorBot	0x00000000
+ELEMENT END
+GROUP END

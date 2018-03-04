@@ -1,0 +1,199 @@
+# Spinneret miniboss config
+
+# boss ID
+ID				1
+# displayed version
+Version			0.10
+# displayed name
+Name			Spinneret
+# model
+ModelName		e_spinneret.AMO
+# scale fac
+Scale			2.0
+# hover altitude
+Altitude		3.0
+# points awarded for defeating it
+Score			5000
+# how many goodies come out
+TreasureType	1
+TreasureCount	2
+
+# Speed values
+SlowSpinSpeed		0.45
+SlowMoveSpeed		20
+FastSpinSpeed		1.3
+FastMoveSpeed		60
+# Rotational acceleration
+SpinAccel			0.8
+# Motion acceleration
+MoveAccel			5.0
+
+# hull of boss is invulnerable?
+Invulnerable		True
+# max collision radius
+CollisionRadius		17
+
+GROUP Turrets
+	ELEMENT Turret0
+	ModelName		e_spinneretturret.AMO
+	AttachPoint		Attach0
+	Type			PLASMA
+	Autonomous		False
+	Invulnerable	True
+	CollisionRadius	4
+	NumBarrels		1
+	StartAngle		0
+	MinAngle		0
+	MaxAngle		0
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		9999
+	ShotInterval	1.5
+	ShotSpeed		130
+	ReloadTime		1.5
+	HitPoints		5
+	ELEMENT END
+
+	ELEMENT Turret1
+	ModelName		e_spinneretturret.AMO
+	AttachPoint		Attach1
+	Type			PLASMA
+	Autonomous		False
+	Invulnerable	True
+	CollisionRadius	4
+	NumBarrels		1
+	StartAngle		90
+	MinAngle		90
+	MaxAngle		90
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		9999
+	ShotInterval	1.5
+	ShotSpeed		130
+	ReloadTime		1.5
+	HitPoints		5
+	ELEMENT END
+
+	ELEMENT Turret2
+	ModelName		e_spinneretturret.AMO
+	AttachPoint		Attach2
+	Type			PLASMA
+	Autonomous		False
+	Invulnerable	True
+	CollisionRadius	4
+	NumBarrels		1
+	StartAngle		180
+	MinAngle		180
+	MaxAngle		180
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		9999
+	ShotInterval	1.5
+	ShotSpeed		130
+	ReloadTime		1.5
+	HitPoints		5
+	Score			350
+	ELEMENT END
+
+	ELEMENT Turret3
+	ModelName		e_spinneretturret.AMO
+	AttachPoint		Attach3
+	Type			PLASMA
+	Autonomous		False
+	Invulnerable	True
+	CollisionRadius	4
+	NumBarrels		1
+	StartAngle		270
+	MinAngle		270
+	MaxAngle		270
+	SweepAttack		False
+	RotationSpeed	1.65
+	ClipSize		9999
+	ShotInterval	1.5
+	ShotSpeed		130
+	ReloadTime		1.5
+	HitPoints		5
+	Score			350
+	ELEMENT END
+
+	ELEMENT Cable0
+	ModelName		e_spinneretcable.AMO
+	AttachPoint		Attach0
+	Type			NOTHING
+	Autonomous		False
+	Invulnerable	True
+	CollisionRadius	0
+	Invulnerable	True
+	ELEMENT END
+
+	ELEMENT Cable1
+	ModelName		e_spinneretcable.AMO
+	AttachPoint		Attach1
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	0
+	Invulnerable	True
+	ELEMENT END
+
+	ELEMENT Cable2
+	ModelName		e_spinneretcable.AMO
+	AttachPoint		Attach2
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	0
+	Invulnerable	True
+	ELEMENT END
+
+	ELEMENT Cable3
+	ModelName		e_spinneretcable.AMO
+	AttachPoint		Attach3
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	0
+	Invulnerable	True
+	ELEMENT END
+
+	ELEMENT Drone0
+	ModelName		e_spinneretpod.AMO
+	AttachPoint		Attach0
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	5
+	HitPoints		10
+	Score			350
+	ELEMENT END
+
+	ELEMENT Drone1
+	ModelName		e_spinneretpod.AMO
+	AttachPoint		Attach1
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	5
+	HitPoints		10
+	Score			350
+	ELEMENT END
+
+	ELEMENT Drone2
+	ModelName		e_spinneretpod.AMO
+	AttachPoint		Attach2
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	5
+	HitPoints		10
+	Score			350
+	ELEMENT END
+
+	ELEMENT Drone3
+	ModelName		e_spinneretpod.AMO
+	AttachPoint		Attach3
+	Type			NOTHING
+	Autonomous		False
+	CollisionRadius	5
+	HitPoints		10
+	Score			350
+	ELEMENT END
+GROUP END
+
+	
+	
+	

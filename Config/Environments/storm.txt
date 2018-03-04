@@ -1,0 +1,30 @@
+# Dark stormclouds and artificial light.
+
+LightAngle		270
+LightElevation	30
+LightColor		0x00FFFFCC
+LightAmbient	0x00336699
+
+UseFog			True
+FogStart		100
+FogEnd			450
+FogColor		0x00111111
+
+NoSkyColor					0x00222222
+SimpleSkyZenithColorTop		0x00000000
+SimpleSkyHeightTop			40.0
+SimpleSkyHorizonColorTop	0x00333333
+SimpleSkyHorizonColorBot	0x00333333
+SImpleSkyZenithColorBot		0x00000000
+SimpleSkyHeightBot			20.0
+
+GROUP SkyLevels
+ELEMENT SunSurface
+	SkyMoveFraction		.01
+	SkyTextureTop		storm.bmp
+	SkyHeightTop		50.5
+	SkyTextureBot		storm.bmp
+	SkyHeightBot		30.5
+	SkyRotateSpeed		.00003
+ELEMENT END
+GROUP END

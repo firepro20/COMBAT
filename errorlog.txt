@@ -1,0 +1,32 @@
+---------------------------------------------------------
+Error ouput 3/4/2018 20:24:1
+---------------------------------------------------------
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Couldn't create fullscreen display.
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Unable to initialize graphics wrapper, period!
+* TerranInit failed.
+---------------------------------------------------------
+Error ouput 3/4/2018 20:24:5
+---------------------------------------------------------
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Couldn't create fullscreen display.
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Unable to initialize graphics wrapper, period!
+* TerranInit failed.
+---------------------------------------------------------
+Error ouput 3/4/2018 19:26:30
+---------------------------------------------------------
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Couldn't create fullscreen display.
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Unable to initialize graphics wrapper, period!
+* TerranInit failed.
+---------------------------------------------------------
+Error ouput 3/4/2018 19:27:11
+---------------------------------------------------------
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Couldn't create fullscreen display.
+* GWrapper::Init: Couldn't use the requested display mode.
+* doInit: Unable to initialize graphics wrapper, period!
+* TerranInit failed.

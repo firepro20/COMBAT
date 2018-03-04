@@ -1,0 +1,526 @@
+GROUP Sounds
+	BaseVolume	.9
+
+	# Universal player sounds, including powerup activation noises
+	GROUP Player
+    	ELEMENT		HitWall
+    	Filename	Tank-Bounce-Wall-01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Die
+    	Filename	PlayerDies01.wav
+    	ELEMENT END
+    
+		ELEMENT		SmallExplosion
+		Filename	Tank-Dead-01.wav
+		ELEMENT END
+
+    	ELEMENT		Move
+    	Filename	Tank01-Move-01.wav
+    	Flags		ADJUSTFREQ
+    	ELEMENT END
+
+		ELEMENT		ScrapeWall
+		Filename	ScrapeWall01.wav
+		ELEMENT END
+
+		ELEMENT		Ram
+		Filename	ScrapeVehicle01.wav
+		ELEMENT END
+
+		ELEMENT		Damaged
+		Filename	PlayerHit01.wav
+		ELEMENT END
+
+		ELEMENT		ShieldHit
+		Filename	PlayerHitProtected02.wav
+		ELEMENT END
+
+	   	ELEMENT 	GenericPowerup
+    	Filename	PlayerGetPowerup01.wav
+    	ELEMENT END
+    
+    	ELEMENT		WeaponPowerup
+    	Filename	WeaponPowerupActive01.wav
+    	ELEMENT END
+    
+		ELEMENT		ExtraLife
+		Filename	ExtraLife02.wav
+		ELEMENT END
+
+		ELEMENT		Points
+		Filename	Power-Up-01a.wav
+		ELEMENT END
+
+		ELEMENT		SmartBomb
+		Volume		1.0
+		Filename	SmartBombShot02.wav
+		ELEMENT END
+
+		ELEMENT		Multiplier
+		Filename	Multiplier01.wav
+		ELEMENT END
+
+    	ELEMENT		ShieldUp
+    	Filename	InvulnerabilityActivate01.wav
+    	ELEMENT END
+    
+    	ELEMENT		ShieldDown
+    	Filename	InvulnerabilityDeactivate01.wav
+    	ELEMENT END
+    
+    	ELEMENT		CloakUp
+    	Filename	InvisibilityActivate01.wav
+    	ELEMENT END
+    
+    	ELEMENT		CloakDown
+    	Filename	InvisibilityDeactivate01.wav
+    	ELEMENT END
+
+		ELEMENT		SpeedUp
+		Filename	AccelerateStart01.wav
+		ELEMENT END
+
+		ELEMENT		SpeedLoop
+		Filename	AccelerateLoop01.wav
+		ELEMENT END
+
+		ELEMENT		SpeedDown
+		FIlename	AccelerateEnd01.wav
+		ELEMENT END
+
+		ELEMENT		ContinuePoint
+		Filename	AccessSpecialArea01.wav
+		ELEMENT END
+
+		ELEMENT		Secret
+		Filename	AccessSpecialArea01.wav
+		ELEMENT END
+	GROUP END
+	
+	# Standard gun sounds
+	GROUP ShotGun
+    	ELEMENT		Fire
+	   	Filename	SingleShotGun01.wav
+	   	ELEMENT END
+    
+    	ELEMENT		Double
+    	Filename	DoubleShotGun01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Triple
+    	Filename	TripleShotGun01.wav
+    	ELEMENT END
+    
+    	ELEMENT		HitWall
+    	Filename	Shot-Hit-Wall-02.wav
+    	ELEMENT END
+    
+    	ELEMENT 	HitTarget
+    	Filename	Shot-Hit-Enemy-01.wav
+    	ELEMENT END
+	GROUP END
+
+	# Bounce gun sounds
+	GROUP BounceGun
+    	ELEMENT		Fire
+    	Filename	SingleBounceShot01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Double
+    	Filename	DoubleBounceShot01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Triple
+    	Filename	TripleBounceShot01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Rebound
+    	Filename	BounceShotRebound01.wav
+    	ELEMENT END
+
+    	ELEMENT		HitWall
+    	Filename	Shot-Hit-Wall-02.wav
+    	ELEMENT END
+    
+    	ELEMENT 	HitTarget
+    	Filename	Shot-Hit-Enemy-01.wav
+    	ELEMENT END
+	GROUP END
+
+	GROUP Dynamic
+		ELEMENT		DoorOpen
+		Filename	DoorOpen01.wav
+		ELEMENT END
+
+		ELEMENT		DoorClose
+		Filename	DoorClose01.wav
+		ELEMENT END
+
+		ELEMENT		ElevatorMove
+		Filename	ElevatorSound01.wav
+		ELEMENT END
+	GROUP END
+
+	# Super Gun sounds
+	GROUP SuperGun
+    	ELEMENT		Fire
+    	Filename	SingleSuperGun01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Double
+    	Filename	DoubleSuperGun01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Triple
+    	Filename	TripleSuperGun01.wav
+    	ELEMENT END
+    
+    	ELEMENT		Explosion
+    	Filename	SuperGunBulletHit01.wav
+    	ELEMENT END
+
+    	ELEMENT		HitWall
+    	Filename	Shot-Hit-Wall-02.wav
+    	ELEMENT END
+    
+    	ELEMENT 	HitTarget
+    	Filename	Shot-Hit-Enemy-01.wav
+    	ELEMENT END
+	GROUP END
+
+	# Exit sounds
+	GROUP Exit
+		ELEMENT		Open
+		Filename	Exit-Spawn-02.wav
+		ELEMENT END
+
+		ELEMENT		Close
+		Filename	Exit-Spawn-02.wav
+		ELEMENT END
+
+		ELEMENT		Activate
+		Filename	ReachExit02.wav
+		ELEMENT END
+
+		ELEMENT		Secret
+		Filename	AccessSpecialArea01.wav
+		ELEMENT END
+	GROUP END
+
+	# Powerup sounds
+	GROUP Powerup
+		ELEMENT		Spawn
+		Filename	Power-Up-Appear-01.wav
+		ELEMENT END
+	GROUP END
+
+	# Sounds used by enemies
+	GROUP Enemy
+		ELEMENT		Spawn
+		Filename	Enemy-Spawn-01.wav
+	   	Flags		ADJUSTFREQ
+		ELEMENT END
+
+		ELEMENT		FireNormal
+		Filename	EnemyFire01.wav
+		ELEMENT END
+
+		ELEMENT		FireBig
+		Filename	EnemyFire02.wav
+		ELEMENT END
+
+		ELEMENT		Collide
+		Filename	Drone-Collide-01.wav
+		ELEMENT END
+
+		ELEMENT		ShootWall
+		Filename	PlayerHitProtected01.wav
+		ELEMENT END
+
+		ELEMENT		SmallExplosion
+		Filename	Enemy-Dead-01.wav
+		ELEMENT END
+
+		ELEMENT		MediumExplosion
+		Filename	Tank-Dead-01.wav
+		ELEMENT END
+
+		ELEMENT		PercussionExplosion
+		Volume		1.0
+		Filename	PercussionBomb02.wav
+		ELEMENT END
+
+		ELEMENT		LargeExplosion
+		Volume		1.0
+		Filename	BossExplosion02.wav
+		ELEMENT END
+
+		ELEMENT		Launch
+       	Filename	Solid-Fuel-Drone-Awakens-02.wav
+   		ELEMENT END
+
+    	ELEMENT 	RamPlayer
+    	Filename	RamVehicles02.wav
+    	ELEMENT END
+
+   		ELEMENT		FirePercussion
+		Volume		1.0
+		Filename	PercussionBombShot02.wav
+		ELEMENT END
+
+		ELEMENT		DeathRayPowerup
+		Filename	DeathRayPowerup01.wav
+		ELEMENT END
+
+		ELEMENT		DeathRayLoop
+		Volume		1.0
+		Filename	DeathRayLoop01.wav
+		ELEMENT END
+	GROUP END
+
+	GROUP Spinneret
+		DoNotCache	True
+		ELEMENT		MoveStart
+		Volume		1.0
+		Filename	SpinneretMoveStart01.wav
+		ELEMENT END
+
+		ELEMENT		MoveLoop
+		Filename	SpinneretMoveLoop01.wav
+		Volume		1.0
+	   	Flags		ADJUSTFREQ
+ 		ELEMENT END
+
+		ELEMENT		MoveEnd
+		Volume		1.0
+		Filename	SpinneretMoveEnd01.wav
+		ELEMENT END
+
+		ELEMENT		DeployGun
+		Filename	MechGunMove01.wav
+		Volume		0.96
+		ELEMENT END
+	GROUP END
+
+	GROUP Gunship
+		DoNotCache	True
+		ELEMENT		MoveStart
+		Filename	GunshipMoveStart01.wav
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		MoveLoop
+		Filename	GunshipMoveLoop01.wav
+		Volume		1.0
+ 		ELEMENT END
+
+		ELEMENT		MoveEnd
+		Filename	GunshipMoveEnd01.wav
+		Volume		1.0
+ 		ELEMENT END
+	GROUP END
+
+	GROUP Patroller
+		DoNotCache	True
+		ELEMENT 	MoveStart
+		Filename	PatrollerStart01.wav
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		MoveLoop
+		Filename	PatrollerMove01.wav
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		MoveEnd
+		Filename	PatrollerStop01.wav
+		Volume		1.0
+		ELEMENT END
+	GROUP END
+
+	GROUP Carrier
+		DoNotCache	True
+	GROUP END
+
+	GROUP BuzzBombQueen
+		DoNotCache	True
+		ELEMENT		Defiance
+		Volume		1.0
+		Filename	BuzzBombQueenDefiant01.wav
+		ELEMENT END
+
+		ELEMENT		Pain
+		Volume		1.0
+		Filename	BuzzBombQueenPain01.wav
+		ELEMENT END
+
+		ELEMENT		Die
+		Volume		1.0
+		Filename	BuzzBombQueenDying01.wav
+		ELEMENT END
+
+		ELEMENT		Rockets
+		Volume		1.0
+		Filename	BuzzBombQueenRockets01.wav
+		ELEMENT END
+
+		ELEMENT		DeployGun
+		Volume		0.92
+		Filename	MechGunMove01.wav
+		ELEMENT END
+	GROUP END
+
+	GROUP Saucer
+		DoNotCache	True
+		ELEMENT		Ambient
+		Volume		0.85
+		Filename	VR-SaucerBossSound01.wav
+		ELEMENT END
+	GROUP END
+
+	GROUP DarthTank
+		DoNotCache	True
+		ELEMENT 	MoveStart
+		Volume		1.0
+		Filename	VR-DarthTank-Accelerate01.wav
+		ELEMENT END
+
+		ELEMENT		MoveLoop
+		Volume		1.0
+		Filename	VR-DarthTank-Move01.wav
+		ELEMENT END
+
+		ELEMENT		MoveEnd
+		Volume		1.0
+		Filename	VR-DarthTank-Decelerate01.wav
+		ELEMENT END
+	GROUP END
+
+	GROUP Interface
+		ELEMENT		BonusTally1
+		Filename 	BonusPointTally01.wav
+		ELEMENT END
+
+		ELEMENT		BonusTally2
+		Filename 	BonusPointTally02.wav
+		ELEMENT END
+
+		ELEMENT		MenuSelect1
+		Filename 	MenuSelect01.wav
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		MenuSelect2
+		Filename 	MenuSelect02.wav
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		MenuCancel
+		Filename	MenuCancelReturn01.wav
+		Volume		1.0
+		ELEMENT END
+	GROUP END
+
+	# Music
+	GROUP Music
+		DoNotCache	True
+		ELEMENT		MenuTheme
+		Filename	MainScreen-Theme.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		TutorialTheme
+		Filename	TutorialTheme.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		PrePostLevelTheme
+		Filename	PrePostLevel-Theme.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		TronTheme
+		Filename	TileSet01-Theme.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		GernsbackTheme
+		Filename	TileSet02-Theme.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		VRTheme
+		Filename	TileSet03-Theme.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		SpinneretMiniboss
+		Filename	Spineret-MinibossTest01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		PatrollersMiniboss
+		Filename	PatrollersMiniboss.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		BuzzBombMiniboss
+		Filename	BuzzBomb-MinibossTest01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		GunshipBoss
+		Filename	GunshipTheme01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		CarrierBoss
+		Filename	CarrierTheme01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		SaucerBoss
+		Filename	VRSaucerTheme01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		LastBoss
+		Filename	VRDarthTankTheme01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		TronSecretLevelTheme
+		Filename	ExcitableBike01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		GernsbackSecretLevelTheme
+		Filename	GhostCity01.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+
+		ELEMENT		VRSecretLevelTheme
+		Filename	VR-SecretSlalom.wav
+		Flags		MUSIC
+		Volume		1.0
+		ELEMENT END
+	GROUP END
+GROUP END
+
+	

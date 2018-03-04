@@ -1,0 +1,50 @@
+
+# Editor icon-age.
+GROUP Icons
+	ELEMENT PlayerStart
+	ID				1
+	EditorTexture	playerstart.bmp
+	ELEMENT END
+
+	ELEMENT PowerupSpawn
+	ID				2
+	EditorTexture	powerupspawn.bmp
+	ELEMENT END
+
+	ELEMENT EnemySpawn
+	ID				3
+	EditorTexture	enemyspawn.bmp
+	ELEMENT END
+
+	ELEMENT Exit
+	ID				4
+	EditorTexture	exit.bmp
+	ELEMENT END
+
+	ELEMENT PathNode
+	ID				5
+	EditorTexture	pathnode.bmp
+	ELEMENT END
+
+	ELEMENT PatrolNode
+	ID				6
+	EditorTexture	patrolnode.bmp
+	ELEMENT END
+
+	ELEMENT Elevator
+	ID				7
+	Object			True
+	EditorTexture	elevator.bmp
+	ELEMENT END
+
+	ELEMENT Door
+	ID				8
+	Object			True
+	EditorTexture	door.bmp
+	ELEMENT END
+
+	ELEMENT DramaPoint
+	ID				9
+	EditorTexture	drama.bmp
+	ELEMENT END
+GROUP END
