@@ -14,4 +14,4 @@ Run Combat.exe. Settings have already been modified for 1920 x 1080 view. Should
 
 # Known Issues
 
-Gaem requires CD to play - working on a fix
+Game requires CD to play - working on a fix
