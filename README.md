@@ -1,6 +1,5 @@
 # COMBAT
 
-[[http://www.mobygames.com/images/covers/l/164777-combat-windows-front-cover.jpg|alt=octocat]]
 
 The original game files - might come useful for a remaster
 
