@@ -1,5 +1,6 @@
 # COMBAT
 
+![Combat](https://github.com/firepro20/COMBAT/blob/ready2go/cover.jpg)
 
 The original game files - might come useful for a remaster
 
